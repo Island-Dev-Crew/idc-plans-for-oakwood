@@ -23,7 +23,7 @@
       "lab_pressed_semantics": true,
       "trace_commission_verify_copy": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 10
+      "raf_p95_ms": 9.4
     },
     "mobile": {
       "http": 200,
@@ -48,7 +48,7 @@
       "lab_pressed_semantics": true,
       "trace_commission_verify_copy": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 9.7
+      "raf_p95_ms": 9.8
     },
     "reduced_motion": {
       "height": 900,
