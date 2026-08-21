@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowDown, ArrowUpRight, BadgeCheck, BookOpen, BrainCircuit, BriefcaseBusiness,
   Building2, Check, ChevronRight, CircleAlert, Cloud, Code2, Cpu, Database,
@@ -148,6 +148,91 @@ function ProofCalculator() {
   </div>
 }
 
+function MotionCursor() {
+  const ref = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || matchMedia('(pointer: coarse)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    let x = innerWidth / 2, y = innerHeight / 2, tx = x, ty = y, raf = 0
+    const move = (e: PointerEvent) => { tx = e.clientX; ty = e.clientY; el.dataset.active = 'true' }
+    const leave = () => { el.dataset.active = 'false' }
+    const tick = () => {
+      x += (tx - x) * .16; y += (ty - y) * .16
+      el.style.transform = `translate3d(${x}px,${y}px,0)`
+      raf = requestAnimationFrame(tick)
+    }
+    addEventListener('pointermove', move, { passive:true }); document.addEventListener('mouseleave', leave); tick()
+    return () => { removeEventListener('pointermove', move); document.removeEventListener('mouseleave', leave); cancelAnimationFrame(raf) }
+  }, [])
+  return <div ref={ref} className="motion-cursor" aria-hidden="true"><i/><span/></div>
+}
+
+function ProofConstellation() {
+  const wrapRef = useRef<HTMLElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  useEffect(() => {
+    const wrap = wrapRef.current, canvas = canvasRef.current
+    if (!wrap || !canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
+    const labels = ['IDEA','BUILD','VERIFY','OPPORTUNITY','LOCAL','EDGE','GOVERN','RESEARCH']
+    const orbit = [[.57,.36],[.69,.22],[.82,.36],[.8,.64],[.3,.72],[.54,.77],[.61,.52],[.45,.56]]
+    const system = [[.16,.64],[.43,.64],[.68,.64],[.9,.64],[.39,.41],[.6,.84],[.79,.39],[.59,.37]]
+    let w=0,h=0,dpr=1,progress=reduce?1:0,target=progress,px=.5,py=.5,raf=0,visible=true
+    const resize=()=>{
+      const r=canvas.getBoundingClientRect(); dpr=Math.min(devicePixelRatio||1,2); w=r.width; h=r.height
+      canvas.width=Math.round(w*dpr); canvas.height=Math.round(h*dpr); ctx.setTransform(dpr,0,0,dpr,0,0)
+    }
+    const pointer=(e:PointerEvent)=>{const r=wrap.getBoundingClientRect();px=(e.clientX-r.left)/r.width;py=(e.clientY-r.top)/r.height}
+    const scroll=()=>{const r=wrap.getBoundingClientRect();target=Math.max(0,Math.min(1,-r.top/Math.max(1,r.height-innerHeight)));wrap.style.setProperty('--constellation-progress',String(target))}
+    const lerp=(a:number,b:number,t:number)=>a+(b-a)*t
+    const draw=()=>{
+      raf=0
+      progress += (target-progress)*(reduce?1:.075)
+      ctx.clearRect(0,0,w,h)
+      const cx=w/2+(px-.5)*14, cy=h/2+(py-.5)*10
+      const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,Math.min(w,h)*.58)
+      glow.addColorStop(0,'rgba(30,95,150,.22)');glow.addColorStop(.5,'rgba(17,58,98,.08)');glow.addColorStop(1,'rgba(7,21,34,0)')
+      ctx.fillStyle=glow;ctx.fillRect(0,0,w,h)
+      ctx.strokeStyle='rgba(227,181,72,.12)';ctx.lineWidth=1
+      ;[.15,.28,.42].forEach(r=>{ctx.beginPath();ctx.arc(cx,cy,Math.min(w,h)*r,0,Math.PI*2);ctx.stroke()})
+      const mobile=w<600
+      const pts=orbit.map((p,i)=>{const nx=lerp(p[0],system[i][0],progress),ny=lerp(p[1],system[i][1],progress);return[nx*w,(mobile?.43+ny*.5:ny)*h]})
+      const links=[[0,1],[1,2],[2,3],[4,1],[5,2],[6,2],[7,1],[7,2]]
+      links.forEach(([a,b],i)=>{
+        const active=Math.max(0,Math.min(1,progress*1.4-i*.035))
+        const g=ctx.createLinearGradient(pts[a][0],pts[a][1],pts[b][0],pts[b][1]);g.addColorStop(0,`rgba(227,181,72,${.18+.55*active})`);g.addColorStop(1,`rgba(30,95,150,${.2+.45*active})`)
+        ctx.strokeStyle=g;ctx.lineWidth=i<3?2:1;ctx.beginPath();ctx.moveTo(pts[a][0],pts[a][1]);ctx.lineTo(pts[b][0],pts[b][1]);ctx.stroke()
+      })
+      pts.forEach(([x,y],i)=>{
+        const main=i<4, pulse=reduce?0:(Math.sin(performance.now()/700+i)+1)*.5
+        ctx.fillStyle=main?'#e3b548':'#1e5f96';ctx.beginPath();ctx.arc(x,y,(main?7:5)+pulse*2,0,Math.PI*2);ctx.fill()
+        ctx.strokeStyle=main?'rgba(227,181,72,.35)':'rgba(86,157,213,.3)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(x,y,(main?17:13)+pulse*4,0,Math.PI*2);ctx.stroke()
+        const labelAlpha=reduce?1:Math.min(1,Math.abs(progress-.5)*3.2)
+        ctx.globalAlpha=labelAlpha;ctx.fillStyle=main?'#f7e5ae':'#b9d9ef';ctx.font=`500 ${main?11:9}px DM Mono, monospace`;ctx.textAlign='center';ctx.fillText(labels[i],x,y+(main?34:27));ctx.globalAlpha=1
+      })
+      if(!reduce&&visible)raf=requestAnimationFrame(draw)
+    }
+    const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible&&!raf&&!reduce)draw()},{rootMargin:'100px'})
+    observer.observe(wrap)
+    resize();scroll();addEventListener('resize',resize);addEventListener('scroll',scroll,{passive:true});wrap.addEventListener('pointermove',pointer,{passive:true});draw()
+    return()=>{removeEventListener('resize',resize);removeEventListener('scroll',scroll);wrap.removeEventListener('pointermove',pointer);observer.disconnect();cancelAnimationFrame(raf)}
+  },[])
+  return <section ref={wrapRef} className="constellation" aria-labelledby="constellation-title">
+    <div className="constellation-sticky">
+      <canvas ref={canvasRef} aria-hidden="true"/>
+      <div className="constellation-copy">
+        <p className="eyebrow">THE SYSTEM COMES ALIVE</p>
+        <h2 id="constellation-title">From scattered capability to a visible <em>proof network.</em></h2>
+        <p>Scroll to reorganize Oakwood’s assets into one operating path. Every connection must end in work that can be inspected.</p>
+      </div>
+      <div className="constellation-phases" aria-hidden="true"><span>CAPABILITY</span><span>COORDINATION</span><span>PROOF</span></div>
+      <p className="sr-only">A visual model connects idea, build, verification and opportunity with local AI, edge systems, governance and research.</p>
+    </div>
+  </section>
+}
+
 export default function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   const [activeSection,setActiveSection] = useState('benchmark')
@@ -155,9 +240,13 @@ export default function App() {
   const year = useMemo(()=>new Date().getFullYear(),[])
 
   useEffect(()=>{
+    document.documentElement.classList.add('motion-ready')
     const update=()=>{
       const max=document.documentElement.scrollHeight-innerHeight
-      setProgress(max>0?scrollY/max*100:0)
+      const pct=max>0?scrollY/max*100:0
+      setProgress(pct)
+      document.documentElement.style.setProperty('--page-progress',String(pct/100))
+      document.documentElement.style.setProperty('--hero-scroll',String(Math.min(1,scrollY/Math.max(1,innerHeight))))
       let current='benchmark'
       document.querySelectorAll<HTMLElement>('section[id]').forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.42) current=s.id})
       setActiveSection(current)
@@ -165,10 +254,11 @@ export default function App() {
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('shown')}),{threshold:.12})
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el))
     addEventListener('scroll',update,{passive:true});update()
-    return()=>{removeEventListener('scroll',update);io.disconnect()}
+    return()=>{removeEventListener('scroll',update);io.disconnect();document.documentElement.classList.remove('motion-ready')}
   },[])
 
   return <>
+    <MotionCursor/>
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="progress" style={{width:`${progress}%`}} />
     <header className="topbar">
@@ -186,7 +276,7 @@ export default function App() {
         <div className="hero-photo"><img fetchPriority="high" decoding="async" src="./assets/concept-lab-hero.webp" alt="Concept rendering of an Oakwood AI production studio"/><span><Sparkles size={14}/> Concept rendering · proposed future state</span></div>
         <div className="hero-grain" />
         <div className="hero-copy">
-          <div className="hero-meta"><span>IDC PLANS FOR OAKWOOD</span><span>AUGUST 2026</span><span>MISSION BUILD · IRON CANVAS v5.2</span></div>
+          <div className="hero-meta"><span>IDC PLANS FOR OAKWOOD</span><span>AUGUST 2026</span><span>IMMERSIVE SYSTEM · MOTION PASS</span></div>
           <h1>The race was never to announce <em>AI</em> first.</h1>
           <p className="hero-thesis">It is to turn AI into <strong>proof</strong>—work students can ship, defend, and carry into opportunity.</p>
           <div className="hero-actions"><a className="button primary" href="#benchmark">Read the benchmark <ArrowDown size={18}/></a><a className="button ghost" href="#model">See the 2× model <ArrowUpRight size={18}/></a></div>
@@ -207,6 +297,8 @@ export default function App() {
           ].map(([Icon,title,desc])=>{const C=Icon as typeof Workflow;return <article className="reality-item reveal" key={String(title)}><C/><h3>{String(title)}</h3><p>{String(desc)}</p></article>})}
         </div>
       </section>
+
+      <ProofConstellation/>
 
       <section className="benchmark" id="benchmark">
         <SectionHead index="01" eyebrow="A LAYER-AWARE BENCHMARK" title="AAMU institutionalized. IDC operationalized." intro="AAMU is a degree and research ecosystem. IDC’s Oakwood work is an implementation and production blueprint. The comparison is most useful when it respects that difference." />

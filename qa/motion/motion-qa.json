@@ -1,0 +1,67 @@
+{
+  "results": {
+    "desktop": {
+      "http": 200,
+      "console_errors": [],
+      "overflow": false,
+      "canvas": {
+        "w": 1440,
+        "h": 1000,
+        "cssW": 1440,
+        "cssH": 1000
+      },
+      "canvas_states_unique": 3,
+      "canvas_png_bytes": [
+        461169,
+        450813,
+        456277
+      ],
+      "reveals_visible_by_default": true,
+      "phase_progress_width_at_end": "1229.06px",
+      "raf_avg_ms": 8.32,
+      "raf_p95_ms": 9
+    },
+    "mobile": {
+      "http": 200,
+      "console_errors": [],
+      "overflow": false,
+      "canvas": {
+        "w": 390,
+        "h": 844,
+        "cssW": 390,
+        "cssH": 844
+      },
+      "canvas_states_unique": 3,
+      "canvas_png_bytes": [
+        144645,
+        141261,
+        144726
+      ],
+      "reveals_visible_by_default": true,
+      "phase_progress_width_at_end": "341.047px",
+      "raf_avg_ms": 8.33,
+      "raf_p95_ms": 9
+    },
+    "reduced_motion": {
+      "height": 900,
+      "viewport": 900,
+      "sticky": "relative",
+      "cursor": "none",
+      "animated": 0,
+      "canvas_static": true,
+      "errors": []
+    }
+  },
+  "gates": {
+    "http_ok": true,
+    "no_console_errors": true,
+    "no_overflow": true,
+    "three_visual_states": true,
+    "canvas_sized": true,
+    "content_not_hidden": true,
+    "frame_budget": true,
+    "reduced_motion_static": true,
+    "reduced_motion_compact": true
+  },
+  "passed": true
+}
