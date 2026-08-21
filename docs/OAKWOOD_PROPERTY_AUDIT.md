@@ -15,7 +15,7 @@
 
 ## Repository inventory
 
-- **Oakwood AI Hub:** 113 files, including 87 JPGs and 71 photographed walkthrough exhibits.
+- **Oakwood AI Hub:** 113 files, including 87 JPGs. The public resource page renders 71 walkthrough cards but contains 70 unique image URLs; `20260526_152012_HDR.jpg` is duplicated.
 - **Campus Companion enhanced:** 291 files; 179 JavaScript files; deployed web application plus project brief, differentiator and stakeholder materials.
 - **Campus Showcase:** 25 files; public comparison artifact and CHAC report.
 - **Original presentation:** dynamically rendered Gamma site, preserved through browser capture rather than assumed from memory.
@@ -26,7 +26,7 @@
 2. **Funding firewall.** Equipment, facility labor and sustainment are separated.
 3. **Multi-modal lab model.** Local compute, edge/physical AI, media, fabrication and instruction coexist.
 4. **Student initiative is preserved.** The 12-student Campus Companion team is treated as a foundation, not a failure.
-5. **Concrete production evidence.** Enhanced Campus Companion records 51 buildings, 57 departments, 94 accessibility attributes and 27 iterations in IDC project evidence.
+5. **Concrete production evidence.** The current public Campus Companion exposes 51 buildings and 60 department entries. IDC project records separately document 94 accessibility attributes and 27 iterations.
 6. **Responsible-AI intent.** Ethics and governance were present before they became fashionable.
 
 ## Material gaps in the previous ecosystem
@@ -63,6 +63,21 @@ The application should become the first **Proof Ledger reference case**:
 - separate student contributions from IDC intervention;
 - issue a LinkedIn-friendly public credential page only when underlying evidence is inspectable;
 - avoid claiming LinkedIn offers an unrestricted custom candidate-scoring API.
+
+## Late public-state audit: stale and contradictory items
+
+The post-build independent audit surfaced several issues in the legacy properties. These do not change the 2× strategy, but they matter before presenting old pages as current institutional facts:
+
+- The AI Lab dashboard remains **Pre-Award**, **5%**, and last updated June 2026; budget commitments are blank and the June 30 purchase deadline remains a todo.
+- The May route is still named `ai-lab-final`, although the June IDC package supersedes it.
+- Electrical/facility quote labels conflict: one surface describes Quote 2 as $34K–$37K while the proposal summary groups related facility costs into $54.4K–$61K. These categories require normalization before procurement.
+- The hub says “13-page proposal,” while the PDF renders as 15 physical pages; the HTML uses thirteen logical pages.
+- June vendor prices, quote expirations and hardware assumptions require new procurement-time quotes.
+- NASA grant, WIOA, learning-speed, savings, enrollment-growth and placement claims in the original Gamma presentation lack primary evidence on the page and remain unverified.
+- The Campus Companion canonical domain `oucampuscompanion.app` does not resolve; the Vercel deployment is the working public surface.
+- Campus Companion event data is stale after April 5, 2026, and “Smart Route Planner” / “Saved Favorites” remain marked coming soon.
+- Neither the Oakwood AI Hub nor Campus Companion currently publishes valid robots/sitemap coverage appropriate to its public claims.
+- No public evidence establishes adopted Oakwood governance policy, FERPA/security assessment, final procurement eligibility, room approval, or measured learning/employer outcomes.
 
 ## Confidence statement
 

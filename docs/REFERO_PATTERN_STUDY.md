@@ -6,12 +6,14 @@
 
 ## Method
 
-1. Opened Refero Styles.
-2. Activated the Popular view.
-3. Performed a slow, automated scroll while recording the browser viewport.
-4. Continued scrolling until at least 100 style cards were present.
-5. Preserved the first 100 card titles/descriptions and source links.
+1. Opened Refero Styles and activated the Popular view.
+2. Recorded a slow browser scroll for visual evidence.
+3. Verified the public same-site endpoint `https://styles.refero.design/api/styles?page=N&sort=popular`.
+4. Preserved pages 1–5: 20 records each, 100 sequential unique style URLs.
+5. Preserved the first 100 titles/descriptions and source links.
 6. Selected patterns by transferability to an HBCU institutional strategy hub—not by trendiness alone.
+
+Refero does not publish the popularity formula or scoring period, so the ordering is captured accurately but its methodology cannot be independently validated.
 
 ## Selected pattern ingredients
 
