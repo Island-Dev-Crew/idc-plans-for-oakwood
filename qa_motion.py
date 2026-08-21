@@ -37,6 +37,12 @@ async def ordinary_pass(browser, label, viewport):
     visible_reveals=await page.locator('.reveal').evaluate_all("els=>els.every(e=>getComputedStyle(e).opacity==='1')")
     overflow=await page.evaluate('document.documentElement.scrollWidth > document.documentElement.clientWidth')
     phase_width=await page.locator('.constellation-phases').evaluate("e=>getComputedStyle(e,'::after').width")
+    settled_a,_=await canvas_hash(page); await page.wait_for_timeout(400); settled_b,_=await canvas_hash(page)
+    semantics=await page.evaluate("""() => ({
+      cursorCount:document.querySelectorAll('.motion-cursor').length,
+      allLabButtonsPressed:[...document.querySelectorAll('.lab-interactive button')].every(b=>b.hasAttribute('aria-pressed')),
+      traceCopy:document.querySelector('.constellation-copy')?.textContent || ''
+    })""")
     result={
       'http': response.status if response else None,
       'console_errors': errors,
@@ -46,6 +52,10 @@ async def ordinary_pass(browser, label, viewport):
       'canvas_png_bytes': [x[2] for x in hashes],
       'reveals_visible_by_default': visible_reveals,
       'phase_progress_width_at_end': phase_width,
+      'canvas_settles': settled_a==settled_b,
+      'no_custom_cursor': semantics['cursorCount']==0,
+      'lab_pressed_semantics': semantics['allLabButtonsPressed'],
+      'trace_commission_verify_copy': all(x in semantics['traceCopy'].upper() for x in ['TRACE','COMMISSION','VERIFY']),
       'raf_avg_ms': round(statistics.mean(frames),2),
       'raf_p95_ms': round(sorted(frames)[int(len(frames)*.95)],2),
     }
@@ -60,9 +70,8 @@ async def reduced_pass(browser):
     data=await page.evaluate("""() => {
       const c=document.querySelector('.constellation');
       const s=document.querySelector('.constellation-sticky');
-      const cursor=document.querySelector('.motion-cursor');
       const animated=[...document.querySelectorAll('*')].filter(e=>getComputedStyle(e).animationName!=='none').length;
-      return {height:c.getBoundingClientRect().height,viewport:innerHeight,sticky:getComputedStyle(s).position,cursor:getComputedStyle(cursor).display,animated}
+      return {height:c.getBoundingClientRect().height,viewport:innerHeight,sticky:getComputedStyle(s).position,cursorCount:document.querySelectorAll('.motion-cursor').length,animated}
     }""")
     h1,_=await canvas_hash(page); await page.wait_for_timeout(400); h2,_=await canvas_hash(page)
     data.update({'canvas_static':h1==h2,'errors':errors})
@@ -87,8 +96,11 @@ async def main():
       'canvas_sized':all(results[x]['canvas']['cssW']>300 and results[x]['canvas']['cssH']>600 for x in ['desktop','mobile']),
       'content_not_hidden':all(results[x]['reveals_visible_by_default'] for x in ['desktop','mobile']),
       'frame_budget':all(results[x]['raf_avg_ms']<22 and results[x]['raf_p95_ms']<35 for x in ['desktop','mobile']),
+      'canvas_stops_when_settled':all(results[x]['canvas_settles'] for x in ['desktop','mobile']),
+      'oakwood_motion_language':all(results[x]['no_custom_cursor'] and results[x]['trace_commission_verify_copy'] for x in ['desktop','mobile']),
+      'lab_selection_semantics':all(results[x]['lab_pressed_semantics'] for x in ['desktop','mobile']),
       'reduced_motion_static':results['reduced_motion']['canvas_static'] and results['reduced_motion']['animated']==0,
-      'reduced_motion_compact':results['reduced_motion']['height']<=results['reduced_motion']['viewport']*1.05 and results['reduced_motion']['sticky']=='relative' and results['reduced_motion']['cursor']=='none',
+      'reduced_motion_compact':results['reduced_motion']['height']<=results['reduced_motion']['viewport']*1.05 and results['reduced_motion']['sticky']=='relative' and results['reduced_motion']['cursorCount']==0,
     }
     payload={'results':results,'gates':gates,'passed':all(gates.values())}
     (OUT/'motion-qa.json').write_text(json.dumps(payload,indent=2))

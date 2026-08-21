@@ -12,14 +12,18 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        461425,
-        442430,
-        456411
+        334944,
+        337632,
+        336189
       ],
       "reveals_visible_by_default": true,
       "phase_progress_width_at_end": "1229.06px",
+      "canvas_settles": true,
+      "no_custom_cursor": true,
+      "lab_pressed_semantics": true,
+      "trace_commission_verify_copy": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 8.4
+      "raf_p95_ms": 10
     },
     "mobile": {
       "http": 200,
@@ -33,20 +37,24 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        144651,
-        136475,
-        144780
+        90875,
+        92540,
+        92763
       ],
       "reveals_visible_by_default": true,
       "phase_progress_width_at_end": "341.047px",
+      "canvas_settles": true,
+      "no_custom_cursor": true,
+      "lab_pressed_semantics": true,
+      "trace_commission_verify_copy": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 8.8
+      "raf_p95_ms": 9.7
     },
     "reduced_motion": {
       "height": 900,
       "viewport": 900,
       "sticky": "relative",
-      "cursor": "none",
+      "cursorCount": 0,
       "animated": 0,
       "canvas_static": true,
       "errors": []
@@ -60,6 +68,9 @@
     "canvas_sized": true,
     "content_not_hidden": true,
     "frame_budget": true,
+    "canvas_stops_when_settled": true,
+    "oakwood_motion_language": true,
+    "lab_selection_semantics": true,
     "reduced_motion_static": true,
     "reduced_motion_compact": true
   },

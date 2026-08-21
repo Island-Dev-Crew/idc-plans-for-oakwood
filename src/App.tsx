@@ -100,23 +100,25 @@ function LabMap() {
     ['Shared local inference','Memory-first model serving'], ['Edge & fabrication','Robotics, sensors, soldering, 3D print'],
     ['Proof wall','Live artifacts, evals and outcomes'], ['Evidence vault','Provenance, backup and access control']
   ]
+  const select=(name:string)=>setActive(name)
   return <div className="lab-interactive reveal">
-    <div className="lab-stage" role="img" aria-label="Interactive diagram of the proposed 10-seat AI production and proof lab">
-      <div className="signal-line" />
+    <div className="lab-stage" data-route={active} aria-label="Interactive diagram of the proposed 10-seat AI production and proof lab">
+      <div key={active} className="signal-line" aria-hidden="true" />
       <div className="seat-grid">
-        {[1,2,3,4,5,6].map(n=><button key={n} onClick={()=>setActive('Maker seats ×6')} className={active==='Maker seats ×6'?'active':''}><Cpu/><span>M{n}</span></button>)}
-        <button onClick={()=>setActive('Specialist seats ×2')} className={active==='Specialist seats ×2'?'special active':'special'}><Sparkles/><span>MEDIA</span></button>
-        <button onClick={()=>setActive('Specialist seats ×2')} className={active==='Specialist seats ×2'?'special active':'special'}><ShieldCheck/><span>SEC</span></button>
-        <button onClick={()=>setActive('Faculty console')} className={active==='Faculty console'?'faculty active':'faculty'}><PanelTop/><span>FACULTY</span></button>
-        <button onClick={()=>setActive('Adaptive/demo seat')} className={active==='Adaptive/demo seat'?'demo active':'demo'}><Eye/><span>DEMO</span></button>
+        {[1,2,3,4,5,6].map(n=><button key={n} aria-pressed={active==='Maker seats ×6'} onClick={()=>select('Maker seats ×6')} className={active==='Maker seats ×6'?'active':''}><Cpu/><span>M{n}</span></button>)}
+        <button aria-pressed={active==='Specialist seats ×2'} onClick={()=>select('Specialist seats ×2')} className={active==='Specialist seats ×2'?'special active':'special'}><Sparkles/><span>MEDIA</span></button>
+        <button aria-pressed={active==='Specialist seats ×2'} onClick={()=>select('Specialist seats ×2')} className={active==='Specialist seats ×2'?'special active':'special'}><ShieldCheck/><span>SEC</span></button>
+        <button aria-pressed={active==='Faculty console'} onClick={()=>select('Faculty console')} className={active==='Faculty console'?'faculty active':'faculty'}><PanelTop/><span>FACULTY</span></button>
+        <button aria-pressed={active==='Adaptive/demo seat'} onClick={()=>select('Adaptive/demo seat')} className={active==='Adaptive/demo seat'?'demo active':'demo'}><Eye/><span>DEMO</span></button>
       </div>
-      <button className={`core-node ${active==='Shared local inference'?'active':''}`} onClick={()=>setActive('Shared local inference')}><Server/><span>LOCAL<br/>INFERENCE</span></button>
-      <button className={`edge-node ${active==='Edge & fabrication'?'active':''}`} onClick={()=>setActive('Edge & fabrication')}><Hammer/><span>EDGE + FAB</span></button>
-      <button className={`wall-node ${active==='Proof wall'?'active':''}`} onClick={()=>setActive('Proof wall')}><Radar/><span>PROOF WALL</span></button>
-      <button className={`vault-node ${active==='Evidence vault'?'active':''}`} onClick={()=>setActive('Evidence vault')}><LockKeyhole/><span>EVIDENCE VAULT</span></button>
+      <button aria-pressed={active==='Shared local inference'} className={`core-node ${active==='Shared local inference'?'active':''}`} onClick={()=>select('Shared local inference')}><Server/><span>LOCAL<br/>INFERENCE</span></button>
+      <button aria-pressed={active==='Edge & fabrication'} className={`edge-node ${active==='Edge & fabrication'?'active':''}`} onClick={()=>select('Edge & fabrication')}><Hammer/><span>EDGE + FAB</span></button>
+      <button aria-pressed={active==='Proof wall'} className={`wall-node ${active==='Proof wall'?'active':''}`} onClick={()=>select('Proof wall')}><Radar/><span>PROOF WALL</span></button>
+      <button aria-pressed={active==='Evidence vault'} className={`vault-node ${active==='Evidence vault'?'active':''}`} onClick={()=>select('Evidence vault')}><LockKeyhole/><span>EVIDENCE VAULT</span></button>
     </div>
     <div className="zone-list">
-      {zones.map(([name,desc])=><button key={name} onClick={()=>setActive(name)} className={active===name?'active':''}><span>{name}</span><small>{desc}</small><ChevronRight size={16}/></button>)}
+      <p className="route-readout" aria-live="polite">ROUTE: {active} → LOCAL INFERENCE → PROOF WALL → EVIDENCE VAULT</p>
+      {zones.map(([name,desc])=><button key={name} aria-pressed={active===name} onClick={()=>select(name)} className={active===name?'active':''}><span>{name}</span><small>{desc}</small><ChevronRight size={16}/></button>)}
     </div>
   </div>
 }
@@ -148,26 +150,7 @@ function ProofCalculator() {
   </div>
 }
 
-function MotionCursor() {
-  const ref = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const el = ref.current
-    if (!el || matchMedia('(pointer: coarse)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    let x = innerWidth / 2, y = innerHeight / 2, tx = x, ty = y, raf = 0
-    const move = (e: PointerEvent) => { tx = e.clientX; ty = e.clientY; el.dataset.active = 'true' }
-    const leave = () => { el.dataset.active = 'false' }
-    const tick = () => {
-      x += (tx - x) * .16; y += (ty - y) * .16
-      el.style.transform = `translate3d(${x}px,${y}px,0)`
-      raf = requestAnimationFrame(tick)
-    }
-    addEventListener('pointermove', move, { passive:true }); document.addEventListener('mouseleave', leave); tick()
-    return () => { removeEventListener('pointermove', move); document.removeEventListener('mouseleave', leave); cancelAnimationFrame(raf) }
-  }, [])
-  return <div ref={ref} className="motion-cursor" aria-hidden="true"><i/><span/></div>
-}
-
-function ProofConstellation() {
+function ProofTrace() {
   const wrapRef = useRef<HTMLElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   useEffect(() => {
@@ -176,59 +159,64 @@ function ProofConstellation() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
-    const labels = ['IDEA','BUILD','VERIFY','OPPORTUNITY','LOCAL','EDGE','GOVERN','RESEARCH']
-    const orbit = [[.57,.36],[.69,.22],[.82,.36],[.8,.64],[.3,.72],[.54,.77],[.61,.52],[.45,.56]]
-    const system = [[.16,.64],[.43,.64],[.68,.64],[.9,.64],[.39,.41],[.6,.84],[.79,.39],[.59,.37]]
-    let w=0,h=0,dpr=1,progress=reduce?1:0,target=progress,px=.5,py=.5,raf=0,visible=true
-    const resize=()=>{
-      const r=canvas.getBoundingClientRect(); dpr=Math.min(devicePixelRatio||1,2); w=r.width; h=r.height
-      canvas.width=Math.round(w*dpr); canvas.height=Math.round(h*dpr); ctx.setTransform(dpr,0,0,dpr,0,0)
-    }
-    const pointer=(e:PointerEvent)=>{const r=wrap.getBoundingClientRect();px=(e.clientX-r.left)/r.width;py=(e.clientY-r.top)/r.height}
-    const scroll=()=>{const r=wrap.getBoundingClientRect();target=Math.max(0,Math.min(1,-r.top/Math.max(1,r.height-innerHeight)));wrap.style.setProperty('--constellation-progress',String(target))}
+    const labels = ['ROOM 409','POWER / DATA','REUSE','STUDIO','LOCAL','VERIFY','EVIDENCE VAULT','OPPORTUNITY']
+    const field = [[.58,.3],[.77,.28],[.63,.53],[.82,.54],[.47,.76],[.63,.78],[.79,.75],[.91,.75]]
+    const commissioned = [[.42,.38],[.59,.38],[.76,.38],[.42,.67],[.57,.67],[.7,.67],[.83,.67],[.94,.67]]
+    const mobileField = [[.24,.58],[.5,.56],[.76,.59],[.58,.68],[.38,.74],[.58,.8],[.42,.86],[.62,.92]]
+    const mobileCommissioned = [[.2,.57],[.5,.57],[.8,.57],[.5,.66],[.5,.73],[.5,.79],[.5,.85],[.5,.91]]
+    const links = [[0,1],[1,3],[2,3],[3,4],[4,5],[5,6],[6,7]]
+    let w=0,h=0,dpr=1,progress=reduce?1:0,target=progress,raf=0
     const lerp=(a:number,b:number,t:number)=>a+(b-a)*t
+    const resize=()=>{
+      const r=canvas.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);w=r.width;h=r.height
+      canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);schedule()
+    }
+    const scroll=()=>{
+      const r=wrap.getBoundingClientRect();target=reduce?1:Math.max(0,Math.min(1,-r.top/Math.max(1,r.height-innerHeight)))
+      wrap.style.setProperty('--constellation-progress',String(target));schedule()
+    }
+    const schedule=()=>{if(!raf)raf=requestAnimationFrame(draw)}
     const draw=()=>{
-      raf=0
-      progress += (target-progress)*(reduce?1:.075)
+      raf=0;progress=reduce?1:lerp(progress,target,.12)
+      if(Math.abs(progress-target)<.001)progress=target
       ctx.clearRect(0,0,w,h)
-      const cx=w/2+(px-.5)*14, cy=h/2+(py-.5)*10
-      const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,Math.min(w,h)*.58)
-      glow.addColorStop(0,'rgba(30,95,150,.22)');glow.addColorStop(.5,'rgba(17,58,98,.08)');glow.addColorStop(1,'rgba(7,21,34,0)')
-      ctx.fillStyle=glow;ctx.fillRect(0,0,w,h)
-      ctx.strokeStyle='rgba(227,181,72,.12)';ctx.lineWidth=1
-      ;[.15,.28,.42].forEach(r=>{ctx.beginPath();ctx.arc(cx,cy,Math.min(w,h)*r,0,Math.PI*2);ctx.stroke()})
       const mobile=w<600
-      const pts=orbit.map((p,i)=>{const nx=lerp(p[0],system[i][0],progress),ny=lerp(p[1],system[i][1],progress);return[nx*w,(mobile?.43+ny*.5:ny)*h]})
-      const links=[[0,1],[1,2],[2,3],[4,1],[5,2],[6,2],[7,1],[7,2]]
+      const from=mobile?mobileField:field,to=mobile?mobileCommissioned:commissioned
+      const pts=from.map((p,i)=>[lerp(p[0],to[i][0],progress)*w,lerp(p[1],to[i][1],progress)*h])
+      ctx.strokeStyle='rgba(112,149,176,.1)';ctx.lineWidth=1
+      const grid=mobile?32:48
+      for(let y=70;y<h;y+=grid){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
+      for(let x=0;x<w;x+=grid){ctx.beginPath();ctx.moveTo(x,70);ctx.lineTo(x,h);ctx.stroke()}
       links.forEach(([a,b],i)=>{
-        const active=Math.max(0,Math.min(1,progress*1.4-i*.035))
-        const g=ctx.createLinearGradient(pts[a][0],pts[a][1],pts[b][0],pts[b][1]);g.addColorStop(0,`rgba(227,181,72,${.18+.55*active})`);g.addColorStop(1,`rgba(30,95,150,${.2+.45*active})`)
-        ctx.strokeStyle=g;ctx.lineWidth=i<3?2:1;ctx.beginPath();ctx.moveTo(pts[a][0],pts[a][1]);ctx.lineTo(pts[b][0],pts[b][1]);ctx.stroke()
+        const [x1,y1]=pts[a],[x2,y2]=pts[b],mx=lerp(x1,x2,.48)
+        ctx.setLineDash([7,8]);ctx.lineDashOffset=-progress*60
+        ctx.strokeStyle='rgba(92,134,164,.26)';ctx.lineWidth=1
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(mx,y1);ctx.lineTo(mx,y2);ctx.lineTo(x2,y2);ctx.stroke()
+        const active=Math.max(0,Math.min(1,progress*1.55-i*.08))
+        ctx.setLineDash([]);ctx.strokeStyle=`rgba(227,181,72,${active*.88})`;ctx.lineWidth=2
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(mx,y1);ctx.lineTo(mx,y2);ctx.lineTo(x2,y2);ctx.stroke()
       })
       pts.forEach(([x,y],i)=>{
-        const main=i<4, pulse=reduce?0:(Math.sin(performance.now()/700+i)+1)*.5
-        ctx.fillStyle=main?'#e3b548':'#1e5f96';ctx.beginPath();ctx.arc(x,y,(main?7:5)+pulse*2,0,Math.PI*2);ctx.fill()
-        ctx.strokeStyle=main?'rgba(227,181,72,.35)':'rgba(86,157,213,.3)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(x,y,(main?17:13)+pulse*4,0,Math.PI*2);ctx.stroke()
-        const labelAlpha=reduce?1:Math.min(1,Math.abs(progress-.5)*3.2)
-        ctx.globalAlpha=labelAlpha;ctx.fillStyle=main?'#f7e5ae':'#b9d9ef';ctx.font=`500 ${main?11:9}px DM Mono, monospace`;ctx.textAlign='center';ctx.fillText(labels[i],x,y+(main?34:27));ctx.globalAlpha=1
+        const main=i>=3,wid=mobile?Math.min(104,Math.max(main?72:58,labels[i].length*5.1)):(main?116:104),hei=mobile?30:36
+        ctx.fillStyle=main?'rgba(10,37,57,.96)':'rgba(16,49,71,.92)';ctx.strokeStyle=main?'#e3b548':'#3d82b2';ctx.lineWidth=1.5
+        ctx.fillRect(x-wid/2,y-hei/2,wid,hei);ctx.strokeRect(x-wid/2,y-hei/2,wid,hei)
+        ctx.fillStyle=main?'#f7e5ae':'#b9d9ef';ctx.font=`500 ${mobile?7:9}px DM Mono, monospace`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(labels[i],x,y)
       })
-      if(!reduce&&visible)raf=requestAnimationFrame(draw)
+      if(progress!==target)schedule()
     }
-    const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible&&!raf&&!reduce)draw()},{rootMargin:'100px'})
-    observer.observe(wrap)
-    resize();scroll();addEventListener('resize',resize);addEventListener('scroll',scroll,{passive:true});wrap.addEventListener('pointermove',pointer,{passive:true});draw()
-    return()=>{removeEventListener('resize',resize);removeEventListener('scroll',scroll);wrap.removeEventListener('pointermove',pointer);observer.disconnect();cancelAnimationFrame(raf)}
+    resize();scroll();addEventListener('resize',resize);addEventListener('scroll',scroll,{passive:true})
+    return()=>{removeEventListener('resize',resize);removeEventListener('scroll',scroll);cancelAnimationFrame(raf)}
   },[])
-  return <section ref={wrapRef} className="constellation" aria-labelledby="constellation-title">
+  return <section ref={wrapRef} className="constellation trace-system" aria-labelledby="constellation-title">
     <div className="constellation-sticky">
       <canvas ref={canvasRef} aria-hidden="true"/>
       <div className="constellation-copy">
-        <p className="eyebrow">THE SYSTEM COMES ALIVE</p>
-        <h2 id="constellation-title">From scattered capability to a visible <em>proof network.</em></h2>
-        <p>Scroll to reorganize Oakwood’s assets into one operating path. Every connection must end in work that can be inspected.</p>
+        <p className="eyebrow">TRACE → COMMISSION → VERIFY</p>
+        <h2 id="constellation-title">Trace the room. Commission the system. <em>Verify the proof.</em></h2>
+        <p>Scroll to turn Oakwood’s documented room, power, reusable assets and student work into one inspectable production route.</p>
       </div>
-      <div className="constellation-phases" aria-hidden="true"><span>CAPABILITY</span><span>COORDINATION</span><span>PROOF</span></div>
-      <p className="sr-only">A visual model connects idea, build, verification and opportunity with local AI, edge systems, governance and research.</p>
+      <div className="constellation-phases" aria-hidden="true"><span>FIELD EVIDENCE</span><span>COMMISSION</span><span>PROOF</span></div>
+      <p className="sr-only">A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.</p>
     </div>
   </section>
 }
@@ -258,7 +246,6 @@ export default function App() {
   },[])
 
   return <>
-    <MotionCursor/>
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="progress" style={{width:`${progress}%`}} />
     <header className="topbar">
@@ -298,7 +285,7 @@ export default function App() {
         </div>
       </section>
 
-      <ProofConstellation/>
+      <ProofTrace/>
 
       <section className="benchmark" id="benchmark">
         <SectionHead index="01" eyebrow="A LAYER-AWARE BENCHMARK" title="AAMU institutionalized. IDC operationalized." intro="AAMU is a degree and research ecosystem. IDC’s Oakwood work is an implementation and production blueprint. The comparison is most useful when it respects that difference." />
