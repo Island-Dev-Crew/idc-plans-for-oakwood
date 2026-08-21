@@ -1,0 +1,50 @@
+{
+  "desktop": {
+    "status": 200,
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "console_errors": [],
+    "images": 8,
+    "bad_images": [],
+    "horizontal_overflow": false,
+    "headings": 55,
+    "links": 23,
+    "buttons": 23,
+    "lab_edge_interaction_active": 1,
+    "lab_interaction_active": 1,
+    "proof_score_before": "72",
+    "proof_score_after": "57",
+    "anti_gaming_cap_visible": 1,
+    "screenshots": [
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-benchmark.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-assets.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-lab.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-proof.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-roadmap.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/desktop-evidence.png"
+    ]
+  },
+  "mobile": {
+    "status": 200,
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "console_errors": [],
+    "images": 8,
+    "bad_images": [],
+    "horizontal_overflow": false,
+    "headings": 55,
+    "links": 23,
+    "buttons": 23,
+    "lab_edge_interaction_active": 1,
+    "lab_interaction_active": 1,
+    "proof_score_before": "72",
+    "proof_score_after": "57",
+    "anti_gaming_cap_visible": 1,
+    "screenshots": [
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-benchmark.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-assets.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-lab.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-proof.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-roadmap.png",
+      "/Users/IDC2.5/clawd/oakwood-compilation-hub-work/idc-plans-for-oakwood/qa/mobile-evidence.png"
+    ]
+  }
+}

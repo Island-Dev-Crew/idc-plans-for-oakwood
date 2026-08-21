@@ -1,0 +1,56 @@
+ARTIFICIAL INTELLIGENCE MAJOR, Department of Electrical Engineering & Computer Science, CETPS, AAMU Undergraduate BULLETIN, 2026-2027 ~ 202
+~
+
+
+                                                                     Artificial Intelligence
+                                                                       125 Credit hours
+
+                                                                      FRESHMAN YEAR
+          First Semester                                                      Second Semester
+          Course No. Course Title                                       Hrs   Course No. Course Title                        Hrs
+          ORI 101     First Year Experience                             1     ORI 102    First Year Experience               1
+          ENG 101     Composition I2                                    3     ENG 102    Composition II2                     3
+          MTH 125 Calculus I                                            4     PHL 206    Ethics                              3
+                      PED/MSC/HED Elective1                             2     HIS        Elective1                           3
+          CS 104      Intro to Computers & Ethics2                      3     MTH 126 Calculus II                            4
+                      Fine Arts Elective1                               3     AI 108     Python Programming II               3
+                                                                          16                                                   17
+
+
+                                                                    SOPHOMORE YEAR
+          First Semester                                                    Second Semester
+          Course No. Course Title                                      Hrs  Course No. Course Title                          Hrs
+          ENG         Literature Sequence1                             3    ENG        Literature Sequence1                  3
+          PHY 213     General Physics with Calculus I                  4    PHY 214    General Physics with Calculus II      4
+          HIS         Elective1                                        3               Soc/Behav Sci Elective1               3
+          CS 109      Intro to Programming II2                         3    CS 206     Intro to Java Programming I2          3
+          CS 203      Discrete Structures2                             3    CS 215     Data Structures2                      3
+                                                                         16                                                    16
+
+Submit Junior Audit
+                                                                        JUNIOR YEAR
+          First Semester                                                        Second Semester
+          Course No. Course Title                                        Hrs    Course No. Course Title                      Hrs
+          MTH 237 Intro to Linear Algebra                                3                 Soc/Behav Sci Elective1           3
+          AI 350      Artificial Intelligence Conception2                3      PSY 320    Cognitive Psychology2             3
+          CS 309      Computer Graphics2                                 3      CS 384     Operating Systems2                3
+          CS 314      Advanced Programming2                              3      CS 389     Programming in Robotics2          3
+          CS 381      Computer Organization2                             3                 CS / AI / ENGG Elective2          3
+                                                                         15                                                  15
+
+Submit Senior Record.
+                                                                        SENIOR YEAR
+          First Semester                                                        Second Semester
+          Course No. Course Title                                        Hrs    Course No. Course Title                      Hrs
+                      MTH 453, ST 453 Prob & Stat2                       3      AI 402     AI Capstone II2 [CS]              3
+          AI 401      AI Capstone I2 [CS]                                3      AI 460     Reinforcement Learning2           3
+          CS 430      Machine Learning2                                  3      AI 465     Natural Language Processing2      3
+          CS 450      Artificial Intelligence2                           3      AI 470     Speech Processing2                3
+          AI 440      Deep Learning & Neural Network2                    3      CS 490     High Performance Computing2       3
+                                                                         15                                                  15
+1
+ See General Education Requirements section of this Bulletin for eligible courses.
+2
+ MinGrade of C required.
+[CS] = capstone course and cannot be substituted.
+
