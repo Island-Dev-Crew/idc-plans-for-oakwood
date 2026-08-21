@@ -1,8 +1,8 @@
-import asyncio, hashlib, json, statistics
+import asyncio, hashlib, json, os, statistics
 from pathlib import Path
 from playwright.async_api import async_playwright
 
-BASE = 'http://127.0.0.1:4177/'
+BASE = os.environ.get('BASE_URL', 'http://127.0.0.1:4177/')
 OUT = Path('qa/motion')
 OUT.mkdir(parents=True, exist_ok=True)
 

@@ -12,14 +12,14 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        461169,
-        450813,
-        456277
+        461425,
+        442430,
+        456411
       ],
       "reveals_visible_by_default": true,
       "phase_progress_width_at_end": "1229.06px",
-      "raf_avg_ms": 8.32,
-      "raf_p95_ms": 9
+      "raf_avg_ms": 8.33,
+      "raf_p95_ms": 8.4
     },
     "mobile": {
       "http": 200,
@@ -33,14 +33,14 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        144645,
-        141261,
-        144726
+        144651,
+        136475,
+        144780
       ],
       "reveals_visible_by_default": true,
       "phase_progress_width_at_end": "341.047px",
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 9
+      "raf_p95_ms": 8.8
     },
     "reduced_motion": {
       "height": 900,
