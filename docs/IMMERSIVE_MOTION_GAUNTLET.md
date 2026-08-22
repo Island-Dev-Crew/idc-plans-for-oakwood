@@ -43,7 +43,7 @@ The first immersive prototype was also rejected after the motion director inspec
 | Internal blind-frame satisfaction | ≥ 8/10 | **8.4/10** |
 | Independent final-candidate score | ≥ 8.1 on every axis | **Not rerun; no false pass claimed** |
 | Signature moment | ≥ 1 | **Oakwood field trace → commissioned proof route** |
-| Performance | ≥ 75 | **95** |
+| Performance | ≥ 75 | **99** |
 | Accessibility | 100 | **100** |
 | Best Practices | 100 | **100** |
 | SEO | 100 | **100** |
@@ -92,7 +92,7 @@ The first immersive prototype was also rejected after the motion director inspec
 - Scoured Oakwood's official 522-page 2025–2027 bulletin and added verified Computer Science, Computer Networks, Applied Mathematics, MIS, and adult Information Technology foundations plus the 18-credit Computer Science minor.
 - Added a five-state bulletin instrument separating what each foundation can support from what remains missing.
 - Added explicit curriculum-inference, proposed-target, and unknown lanes; no Oakwood adoption, approval, funding, accreditation, or implementation is implied.
-- Self-hosted fonts, reduced hero/logo image payload, eliminated layout shift, and restored Lighthouse to 95/100/100/100 plus 100 Agentic Browsing.
+- Self-hosted fonts, reduced hero/logo image payload, eliminated layout shift, and restored Lighthouse to 99/100/100/100 plus 100 Agentic Browsing.
 - Added `qa_10x.py`, machine-readable `llms.txt`, and a verified self-contained portable build.
 
 ### Iteration 6 — delayed fleet reconciliation
@@ -157,11 +157,11 @@ These are internal blind-frame scores, not a substituted independent reviewer ve
 - `qa/lighthouse-immersive.json` — production-build Lighthouse report.
 - `qa_motion.py` — repeatable local/deployed-URL harness (`BASE_URL=...`).
 - `qa/10x/qa-10x.json` — four-lane evidence, foundation interaction, font, overflow, anchor, and reduced-motion assertions.
-- `qa/10x/lighthouse-final.json` — final local Lighthouse report: 95 / 100 / 100 / 100 and Agentic Browsing 100.
+- `qa/10x/lighthouse-final.json` — final deployed Lighthouse report: 99 / 100 / 100 / 100 and Agentic Browsing 100.
 - `qa/10x/*-final.png` — clean desktop/mobile hero and foundation frames.
 - `qa/10x/portable-mobile.png` — portable file opened directly from disk with no external requests.
 - `docs/OAKWOOD_2025_2027_FOUNDATION_AUDIT.md` — page-cited public-foundation research and claim-lane mapping.
 
 ## Release status
 
-**Corrected application commit `03212d1` passes coded technical, provenance, portable-delivery, and internal frame gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** The first delayed critic's 6.6/10 verdict applies to superseded commit `e88556e`, not this deployment. A fresh independent final-candidate audit (`deleg_000acd0f`) is pending; no independent Tier-3 pass is claimed unless every axis returns at least 8.1.
+**Corrected application commit `aba64ee` passes coded technical, provenance, portable-delivery, and internal frame gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** The first delayed critic's 6.6/10 verdict applies to superseded commit `e88556e`, not this deployment. A fresh independent final-candidate audit (`deleg_000acd0f`) is pending; no independent Tier-3 pass is claimed unless every axis returns at least 8.1.
