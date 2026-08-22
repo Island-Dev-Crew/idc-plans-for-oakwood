@@ -1,0 +1,3209 @@
+{
+  "timestamp": "2026-08-22T19:24:31.269Z",
+  "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+  "artifacts": [
+    "qa/tier3/desktop-hero.png",
+    "qa/tier3/desktop-trace.png",
+    "qa/tier3/mobile-hero-full.png",
+    "qa/tier3/mobile-hero-viewport.png",
+    "qa/tier3/mobile-trace-end.png",
+    "qa/tier3/mobile-trace-mid.png",
+    "qa/tier3/mobile-trace-start.png"
+  ],
+  "heroStart": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 0,
+      "docW": 390,
+      "clientW": 390,
+      "docH": 33675,
+      "bodyW": 390
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 21.6,
+      "right": 368.4,
+      "top": 281,
+      "bottom": 444,
+      "width": 346.8,
+      "height": 163,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "44.8px",
+      "lineHeight": "40.768px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 21.6,
+      "right": 368.4,
+      "top": 476,
+      "bottom": 591.8,
+      "width": 346.8,
+      "height": 115.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16.32px",
+      "lineHeight": "23.1744px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 351.3,
+        "top": 275,
+        "bottom": 326
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 346.8,
+        "top": 315.7,
+        "bottom": 366.7
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 364.2,
+        "top": 356.5,
+        "bottom": 407.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 107.2,
+        "top": 397.2,
+        "bottom": 448.2
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 341.6,
+        "top": 478,
+        "bottom": 497
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 307.1,
+        "top": 501.1,
+        "bottom": 520.1
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 227.2,
+        "top": 524.3,
+        "bottom": 543.3
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 227.2,
+        "right": 320.7,
+        "top": 524.3,
+        "bottom": 543.3
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 21.6,
+        "right": 230.5,
+        "top": 547.5,
+        "bottom": 566.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 230.5,
+        "right": 299.3,
+        "top": 547.5,
+        "bottom": 566.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 21.6,
+        "right": 287,
+        "top": 570.6,
+        "bottom": 589.6
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 390,
+      "top": 3016.8,
+      "bottom": 4620.4,
+      "width": 390,
+      "height": 1603.6,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 3138.7,
+      "bottom": 3418.5,
+      "width": 351.6,
+      "height": 279.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "50.7px",
+      "lineHeight": "46.644px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 19.2,
+        "right": 370.8,
+        "top": 3109.7,
+        "bottom": 3122.7,
+        "width": 351.6,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 19.2,
+        "right": 335.6,
+        "top": 3432.1,
+        "bottom": 3495.3,
+        "width": 316.5,
+        "height": 63.2,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "13.6px",
+        "lineHeight": "21.08px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 194.5,
+        "right": 195.5,
+        "top": 3438.3,
+        "bottom": 3439.3,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9282.5,
+        "bottom": 9364.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 9282.5,
+        "bottom": 9364.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9364.5,
+        "bottom": 9446.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 9364.5,
+        "bottom": 9446.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9446.5,
+        "bottom": 9528.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9282.5,
+        "bottom": 9364.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 9282.5,
+        "bottom": 9364.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9364.5,
+        "bottom": 9446.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 9364.5,
+        "bottom": 9446.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 9446.5,
+        "bottom": 9528.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 390,
+      "top": 3016.8,
+      "bottom": 3860.8,
+      "width": 390,
+      "height": 844,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 3807.5,
+      "bottom": 3835.5,
+      "width": 351.6,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 19.2,
+        "right": 123.6,
+        "top": 3824.5,
+        "bottom": 3835.5,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 191.3,
+        "right": 265.9,
+        "top": 3824.5,
+        "bottom": 3835.5,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 333.5,
+        "right": 370.8,
+        "top": 3824.5,
+        "bottom": 3835.5,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 64.6,
+        "right": 122.6,
+        "top": 3546.2,
+        "bottom": 3576.2,
+        "cx": 93.6,
+        "cy": 3561.2
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 164.4,
+        "right": 225.6,
+        "top": 3529.3,
+        "bottom": 3559.3,
+        "cx": 195,
+        "cy": 3544.3
+      },
+      {
+        "name": "REUSE",
+        "left": 267.4,
+        "right": 325.4,
+        "top": 3554.7,
+        "bottom": 3584.7,
+        "cx": 296.4,
+        "cy": 3569.7
+      },
+      {
+        "name": "STUDIO",
+        "left": 190.2,
+        "right": 262.2,
+        "top": 3609.5,
+        "bottom": 3639.5,
+        "cx": 226.2,
+        "cy": 3624.5
+      },
+      {
+        "name": "LOCAL",
+        "left": 112.2,
+        "right": 184.2,
+        "top": 3660.2,
+        "bottom": 3690.2,
+        "cx": 148.2,
+        "cy": 3675.2
+      },
+      {
+        "name": "VERIFY",
+        "left": 190.2,
+        "right": 262.2,
+        "top": 3706.6,
+        "bottom": 3736.6,
+        "cx": 226.2,
+        "cy": 3721.6
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 127.8,
+        "right": 199.8,
+        "top": 3748.8,
+        "bottom": 3778.8,
+        "cx": 163.8,
+        "cy": 3763.8
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 205.8,
+        "right": 277.8,
+        "top": 3769.9,
+        "bottom": 3799.9,
+        "cx": 241.8,
+        "cy": 3784.9
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 3495.3,
+      "firstRowTop": 3529.3,
+      "paragraphToFirstRowGap": 34,
+      "opportunityBottom": 3799.9,
+      "phaseRailTop": 3807.5,
+      "opportunityToPhaseRailGap": 7.6
+    },
+    "consoleHint": []
+  },
+  "traceGeometry": {
+    "top": 3016.84375,
+    "height": 1603.59375,
+    "bottom": 4620.4375
+  },
+  "traceStart": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 3017,
+      "docW": 390,
+      "clientW": 390,
+      "docH": 33675,
+      "bodyW": 390
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -2736,
+      "bottom": -2573,
+      "width": 346.8,
+      "height": 163,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "44.8px",
+      "lineHeight": "40.768px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -2541,
+      "bottom": -2425.2,
+      "width": 346.8,
+      "height": 115.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16.32px",
+      "lineHeight": "23.1744px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 351.3,
+        "top": -2742,
+        "bottom": -2691
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 346.8,
+        "top": -2701.3,
+        "bottom": -2650.3
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 364.2,
+        "top": -2660.5,
+        "bottom": -2609.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 107.2,
+        "top": -2619.8,
+        "bottom": -2568.8
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 341.6,
+        "top": -2539,
+        "bottom": -2520
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 307.1,
+        "top": -2515.9,
+        "bottom": -2496.9
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 227.2,
+        "top": -2492.7,
+        "bottom": -2473.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 227.2,
+        "right": 320.7,
+        "top": -2492.7,
+        "bottom": -2473.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 21.6,
+        "right": 230.5,
+        "top": -2469.5,
+        "bottom": -2450.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 230.5,
+        "right": 299.3,
+        "top": -2469.5,
+        "bottom": -2450.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 21.6,
+        "right": 287,
+        "top": -2446.4,
+        "bottom": -2427.4
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 390,
+      "top": -0.2,
+      "bottom": 1603.4,
+      "width": 390,
+      "height": 1603.6,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 121.8,
+      "bottom": 401.7,
+      "width": 351.6,
+      "height": 279.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "50.7px",
+      "lineHeight": "46.644px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 19.2,
+        "right": 370.8,
+        "top": 92.8,
+        "bottom": 105.8,
+        "width": 351.6,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 19.2,
+        "right": 335.6,
+        "top": 415.3,
+        "bottom": 478.5,
+        "width": 316.5,
+        "height": 63.2,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "13.6px",
+        "lineHeight": "21.08px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 194.5,
+        "right": 195.5,
+        "top": 421.5,
+        "bottom": 422.5,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6265.5,
+        "bottom": 6347.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 6265.5,
+        "bottom": 6347.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6347.5,
+        "bottom": 6429.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 6347.5,
+        "bottom": 6429.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6429.5,
+        "bottom": 6511.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6265.5,
+        "bottom": 6347.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 6265.5,
+        "bottom": 6347.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6347.5,
+        "bottom": 6429.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 6347.5,
+        "bottom": 6429.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6429.5,
+        "bottom": 6511.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "bottom": 844,
+      "width": 390,
+      "height": 844,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 790.7,
+      "bottom": 818.7,
+      "width": 351.6,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 19.2,
+        "right": 123.6,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 191.3,
+        "right": 265.9,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 333.5,
+        "right": 370.8,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0.0002,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 64.6,
+        "right": 122.6,
+        "top": 529.4,
+        "bottom": 559.4,
+        "cx": 93.6,
+        "cy": 544.4
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 164.4,
+        "right": 225.6,
+        "top": 512.5,
+        "bottom": 542.5,
+        "cx": 195,
+        "cy": 527.5
+      },
+      {
+        "name": "REUSE",
+        "left": 267.4,
+        "right": 325.4,
+        "top": 537.8,
+        "bottom": 567.8,
+        "cx": 296.4,
+        "cy": 552.8
+      },
+      {
+        "name": "STUDIO",
+        "left": 190.2,
+        "right": 262.2,
+        "top": 592.7,
+        "bottom": 622.7,
+        "cx": 226.2,
+        "cy": 607.7
+      },
+      {
+        "name": "LOCAL",
+        "left": 112.2,
+        "right": 184.2,
+        "top": 643.3,
+        "bottom": 673.3,
+        "cx": 148.2,
+        "cy": 658.3
+      },
+      {
+        "name": "VERIFY",
+        "left": 190.2,
+        "right": 262.2,
+        "top": 689.7,
+        "bottom": 719.7,
+        "cx": 226.2,
+        "cy": 704.7
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 127.8,
+        "right": 199.8,
+        "top": 731.9,
+        "bottom": 761.9,
+        "cx": 163.8,
+        "cy": 746.9
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 205.8,
+        "right": 277.8,
+        "top": 753,
+        "bottom": 783,
+        "cx": 241.8,
+        "cy": 768
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 478.5,
+      "firstRowTop": 512.5,
+      "paragraphToFirstRowGap": 34,
+      "opportunityBottom": 783,
+      "phaseRailTop": 790.7,
+      "opportunityToPhaseRailGap": 7.7
+    },
+    "consoleHint": []
+  },
+  "traceMid": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 3397,
+      "docW": 390,
+      "clientW": 390,
+      "docH": 33675,
+      "bodyW": 390
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -3116,
+      "bottom": -2953,
+      "width": 346.8,
+      "height": 163,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "44.8px",
+      "lineHeight": "40.768px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -2921,
+      "bottom": -2805.2,
+      "width": 346.8,
+      "height": 115.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16.32px",
+      "lineHeight": "23.1744px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 351.3,
+        "top": -3122,
+        "bottom": -3071
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 346.8,
+        "top": -3081.3,
+        "bottom": -3030.3
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 364.2,
+        "top": -3040.5,
+        "bottom": -2989.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 107.2,
+        "top": -2999.8,
+        "bottom": -2948.8
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 341.6,
+        "top": -2919,
+        "bottom": -2900
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 307.1,
+        "top": -2895.9,
+        "bottom": -2876.9
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 227.2,
+        "top": -2872.7,
+        "bottom": -2853.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 227.2,
+        "right": 320.7,
+        "top": -2872.7,
+        "bottom": -2853.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 21.6,
+        "right": 230.5,
+        "top": -2849.5,
+        "bottom": -2830.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 230.5,
+        "right": 299.3,
+        "top": -2849.5,
+        "bottom": -2830.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 21.6,
+        "right": 287,
+        "top": -2826.4,
+        "bottom": -2807.4
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 390,
+      "top": -380.2,
+      "bottom": 1223.4,
+      "width": 390,
+      "height": 1603.6,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 121.8,
+      "bottom": 401.7,
+      "width": 351.6,
+      "height": 279.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "50.7px",
+      "lineHeight": "46.644px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 19.2,
+        "right": 370.8,
+        "top": 92.8,
+        "bottom": 105.8,
+        "width": 351.6,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 19.2,
+        "right": 335.6,
+        "top": 415.3,
+        "bottom": 478.5,
+        "width": 316.5,
+        "height": 63.2,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "13.6px",
+        "lineHeight": "21.08px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 194.5,
+        "right": 195.5,
+        "top": 421.5,
+        "bottom": 422.5,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5885.5,
+        "bottom": 5967.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5885.5,
+        "bottom": 5967.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5967.5,
+        "bottom": 6049.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5967.5,
+        "bottom": 6049.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6049.5,
+        "bottom": 6131.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5885.5,
+        "bottom": 5967.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5885.5,
+        "bottom": 5967.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5967.5,
+        "bottom": 6049.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5967.5,
+        "bottom": 6049.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 6049.5,
+        "bottom": 6131.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "bottom": 844,
+      "width": 390,
+      "height": 844,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 790.7,
+      "bottom": 818.7,
+      "width": 351.6,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 19.2,
+        "right": 123.6,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 191.3,
+        "right": 265.9,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 333.5,
+        "right": 370.8,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0.5005,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 56.8,
+        "right": 114.8,
+        "top": 527.3,
+        "bottom": 557.3,
+        "cx": 85.8,
+        "cy": 542.3
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 164.4,
+        "right": 225.6,
+        "top": 518.8,
+        "bottom": 548.8,
+        "cx": 195,
+        "cy": 533.8
+      },
+      {
+        "name": "REUSE",
+        "left": 275.2,
+        "right": 333.2,
+        "top": 531.5,
+        "bottom": 561.5,
+        "cx": 304.2,
+        "cy": 546.5
+      },
+      {
+        "name": "STUDIO",
+        "left": 174.6,
+        "right": 246.6,
+        "top": 588.5,
+        "bottom": 618.5,
+        "cx": 210.6,
+        "cy": 603.5
+      },
+      {
+        "name": "LOCAL",
+        "left": 135.6,
+        "right": 207.6,
+        "top": 639.1,
+        "bottom": 669.1,
+        "cx": 171.6,
+        "cy": 654.1
+      },
+      {
+        "name": "VERIFY",
+        "left": 174.6,
+        "right": 246.6,
+        "top": 685.5,
+        "bottom": 715.5,
+        "cx": 210.6,
+        "cy": 700.5
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 143.4,
+        "right": 215.4,
+        "top": 727.7,
+        "bottom": 757.7,
+        "cx": 179.4,
+        "cy": 742.7
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 182.4,
+        "right": 254.4,
+        "top": 753,
+        "bottom": 783,
+        "cx": 218.4,
+        "cy": 768
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 478.5,
+      "firstRowTop": 518.8,
+      "paragraphToFirstRowGap": 40.3,
+      "opportunityBottom": 783,
+      "phaseRailTop": 790.7,
+      "opportunityToPhaseRailGap": 7.7
+    },
+    "consoleHint": []
+  },
+  "traceEnd": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 3776,
+      "docW": 390,
+      "clientW": 390,
+      "docH": 33675,
+      "bodyW": 390
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -3495,
+      "bottom": -3332,
+      "width": 346.8,
+      "height": 163,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "44.8px",
+      "lineHeight": "40.768px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 21.6,
+      "right": 368.4,
+      "top": -3300,
+      "bottom": -3184.2,
+      "width": 346.8,
+      "height": 115.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16.32px",
+      "lineHeight": "23.1744px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 351.3,
+        "top": -3501,
+        "bottom": -3450
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 21.6,
+        "right": 346.8,
+        "top": -3460.3,
+        "bottom": -3409.3
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 364.2,
+        "top": -3419.5,
+        "bottom": -3368.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 21.6,
+        "right": 107.2,
+        "top": -3378.8,
+        "bottom": -3327.8
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 341.6,
+        "top": -3298,
+        "bottom": -3279
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 307.1,
+        "top": -3274.9,
+        "bottom": -3255.9
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 21.6,
+        "right": 227.2,
+        "top": -3251.7,
+        "bottom": -3232.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 227.2,
+        "right": 320.7,
+        "top": -3251.7,
+        "bottom": -3232.7
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 21.6,
+        "right": 230.5,
+        "top": -3228.5,
+        "bottom": -3209.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 230.5,
+        "right": 299.3,
+        "top": -3228.5,
+        "bottom": -3209.5
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 21.6,
+        "right": 287,
+        "top": -3205.4,
+        "bottom": -3186.4
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 390,
+      "top": -759.2,
+      "bottom": 844.4,
+      "width": 390,
+      "height": 1603.6,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 121.8,
+      "bottom": 401.7,
+      "width": 351.6,
+      "height": 279.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "50.7px",
+      "lineHeight": "46.644px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 19.2,
+        "right": 370.8,
+        "top": 92.8,
+        "bottom": 105.8,
+        "width": 351.6,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 19.2,
+        "right": 335.6,
+        "top": 415.3,
+        "bottom": 478.5,
+        "width": 316.5,
+        "height": 63.2,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "13.6px",
+        "lineHeight": "21.08px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 194.5,
+        "right": 195.5,
+        "top": 421.5,
+        "bottom": 422.5,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5506.5,
+        "bottom": 5588.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5506.5,
+        "bottom": 5588.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5588.5,
+        "bottom": 5670.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5588.5,
+        "bottom": 5670.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5670.5,
+        "bottom": 5752.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5506.5,
+        "bottom": 5588.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5506.5,
+        "bottom": 5588.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5588.5,
+        "bottom": 5670.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 195,
+        "right": 370.8,
+        "top": 5588.5,
+        "bottom": 5670.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 19.2,
+        "right": 195,
+        "top": 5670.5,
+        "bottom": 5752.5,
+        "width": 175.8,
+        "height": 82,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "bottom": 844,
+      "width": 390,
+      "height": 844,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 19.2,
+      "right": 370.8,
+      "top": 790.7,
+      "bottom": 818.7,
+      "width": 351.6,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 19.2,
+        "right": 123.6,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 191.3,
+        "right": 265.9,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 333.5,
+        "right": 370.8,
+        "top": 807.7,
+        "bottom": 818.7,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0.9994,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 49,
+        "right": 107,
+        "top": 525.2,
+        "bottom": 555.2,
+        "cx": 78,
+        "cy": 540.2
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 164.4,
+        "right": 225.6,
+        "top": 525.2,
+        "bottom": 555.2,
+        "cx": 195,
+        "cy": 540.2
+      },
+      {
+        "name": "REUSE",
+        "left": 283,
+        "right": 341,
+        "top": 525.2,
+        "bottom": 555.2,
+        "cx": 312,
+        "cy": 540.2
+      },
+      {
+        "name": "STUDIO",
+        "left": 159,
+        "right": 231,
+        "top": 584.2,
+        "bottom": 614.2,
+        "cx": 195,
+        "cy": 599.2
+      },
+      {
+        "name": "LOCAL",
+        "left": 159,
+        "right": 231,
+        "top": 634.9,
+        "bottom": 664.9,
+        "cx": 195,
+        "cy": 649.9
+      },
+      {
+        "name": "VERIFY",
+        "left": 159,
+        "right": 231,
+        "top": 681.3,
+        "bottom": 711.3,
+        "cx": 195,
+        "cy": 696.3
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 159,
+        "right": 231,
+        "top": 723.5,
+        "bottom": 753.5,
+        "cx": 195,
+        "cy": 738.5
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 159,
+        "right": 231,
+        "top": 753,
+        "bottom": 783,
+        "cx": 195,
+        "cy": 768
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 478.5,
+      "firstRowTop": 525.2,
+      "paragraphToFirstRowGap": 46.7,
+      "opportunityBottom": 783,
+      "phaseRailTop": 790.7,
+      "opportunityToPhaseRailGap": 7.7
+    },
+    "consoleHint": []
+  },
+  "tabInfo": [
+    {
+      "i": 0,
+      "text": "CSComputer science",
+      "selected": "true",
+      "controls": null
+    },
+    {
+      "i": 1,
+      "text": "NETComputer networks",
+      "selected": "false",
+      "controls": null
+    },
+    {
+      "i": 2,
+      "text": "MATHApplied mathematics",
+      "selected": "false",
+      "controls": null
+    },
+    {
+      "i": 3,
+      "text": "MISInformation systems",
+      "selected": "false",
+      "controls": null
+    },
+    {
+      "i": 4,
+      "text": "ITInformation technology",
+      "selected": "false",
+      "controls": null
+    }
+  ],
+  "tabChecks": [
+    {
+      "text": "CSComputer science",
+      "selected": "true",
+      "panelText": "OAKWOOD VERIFIED PUBLIC FACT PDF 177\u2013180 Computer science B.S. \u00b7 BULLETIN CONFLICT: 120 / 121 HOURS CATALOG CONFLICT / CLARIFICATION REQUIRED Official-source conflict: one bulletin presentation totals 120 hours; another totals 121. Data structures Algorithms Operating systems Programming languages C",
+      "panelHeading": "Computer science",
+      "panelVisible": true
+    },
+    {
+      "text": "NETComputer networks",
+      "selected": "true",
+      "panelText": "OAKWOOD VERIFIED PUBLIC FACT PDF 175\u2013176 Computer networks B.A. \u00b7 120 CREDITS C++ programming Data structures Operating systems Computer networks Advanced networking Selected topics + research WHAT THIS CAN SUPPORT A verified infrastructure spine for secure, networked and edge AI systems. WHAT IS ST",
+      "panelHeading": "Computer networks",
+      "panelVisible": true
+    },
+    {
+      "text": "MATHApplied mathematics",
+      "selected": "true",
+      "panelText": "OAKWOOD VERIFIED PUBLIC FACT PDF 163\u2013174 Applied mathematics B.S. PATHWAYS \u00b7 OFFICIAL METADATA NEEDS CLARIFICATION CATALOG CONFLICT / CLARIFICATION REQUIRED Catalog metadata labels the B.S. page as \u201cAssociate of Science\u201d; the program title and requirements describe a bachelor\u2019s program. Calculus I\u2013I",
+      "panelHeading": "Applied mathematics",
+      "panelVisible": true
+    },
+    {
+      "text": "MISInformation systems",
+      "selected": "true",
+      "panelText": "OAKWOOD VERIFIED PUBLIC FACT PDF 211\u2013213 Information systems B.S. \u00b7 120 CREDITS Database management Information security Business programming Networks Systems analysis Project management WHAT THIS CAN SUPPORT A governance, deployment and organizational-operations lane is already teachable. WHAT IS S",
+      "panelHeading": "Information systems",
+      "panelVisible": true
+    },
+    {
+      "text": "ITInformation technology",
+      "selected": "true",
+      "panelText": "OAKWOOD VERIFIED PUBLIC FACT PDF 287\u2013288 Information technology ADULT B.S. \u00b7 120 CREDITS Algorithms Programming Networks Modern databases Information security Resource management WHAT THIS CAN SUPPORT An adult/upskilling route could connect institutional AI capacity to working professionals. WHAT IS",
+      "panelHeading": "Information technology",
+      "panelVisible": true
+    }
+  ],
+  "desktopBase": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 1440,
+      "h": 900,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 0,
+      "docW": 1440,
+      "clientW": 1440,
+      "docH": 20595,
+      "bodyW": 1440
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 86.4,
+      "right": 986.4,
+      "top": 290.9,
+      "bottom": 556.9,
+      "width": 900,
+      "height": 266.1,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "100.8px",
+      "lineHeight": "88.704px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 86.4,
+      "right": 786.4,
+      "top": 588.9,
+      "bottom": 735.8,
+      "width": 700,
+      "height": 146.9,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "27.2px",
+      "lineHeight": "36.72px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 86.4,
+        "right": 903.4,
+        "top": 277.9,
+        "bottom": 391.9
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 86.4,
+        "right": 717.6,
+        "top": 366.5,
+        "bottom": 480.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 717.6,
+        "right": 894.1,
+        "top": 366.5,
+        "bottom": 480.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 86.4,
+        "right": 843,
+        "top": 455.2,
+        "bottom": 569.2
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 86.4,
+        "right": 710.6,
+        "top": 590.9,
+        "bottom": 622.9
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 86.4,
+        "right": 742.8,
+        "top": 627.6,
+        "bottom": 659.6
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 86.4,
+        "right": 573,
+        "top": 664.4,
+        "bottom": 696.4
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 573,
+        "right": 683.5,
+        "top": 664.4,
+        "bottom": 696.4
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 86.4,
+        "right": 502.8,
+        "top": 701.1,
+        "bottom": 733.1
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 1440,
+      "top": 2022.3,
+      "bottom": 4182.3,
+      "width": 1440,
+      "height": 2160,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 86.4,
+      "right": 736.4,
+      "top": 2150.3,
+      "bottom": 2447,
+      "width": 650,
+      "height": 296.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "80.64px",
+      "lineHeight": "74.1888px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 86.4,
+        "right": 736.4,
+        "top": 2121.3,
+        "bottom": 2134.3,
+        "width": 650,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 86.4,
+        "right": 626.4,
+        "top": 2463,
+        "bottom": 2512.6,
+        "width": 540,
+        "height": 49.6,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 719.5,
+        "right": 720.5,
+        "top": 2471.8,
+        "bottom": 2472.8,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 6788.6,
+        "bottom": 6941.4,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 6941.4,
+        "bottom": 7094.2,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7094.2,
+        "bottom": 7247,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7247,
+        "bottom": 7399.8,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7399.8,
+        "bottom": 7552.7,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 6788.6,
+        "bottom": 6941.4,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 6941.4,
+        "bottom": 7094.2,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7094.2,
+        "bottom": 7247,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7247,
+        "bottom": 7399.8,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 7399.8,
+        "bottom": 7552.7,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 1440,
+      "top": 2022.3,
+      "bottom": 2922.3,
+      "width": 1440,
+      "height": 900,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 86.4,
+      "right": 1353.6,
+      "top": 2849.3,
+      "bottom": 2877.3,
+      "width": 1267.2,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 86.4,
+        "right": 190.8,
+        "top": 2866.3,
+        "bottom": 2877.3,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 716.3,
+        "right": 790.9,
+        "top": 2866.3,
+        "bottom": 2877.3,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 1316.3,
+        "right": 1353.6,
+        "top": 2866.3,
+        "bottom": 2877.3,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 316.6,
+        "right": 374.6,
+        "top": 2587.8,
+        "bottom": 2617.8,
+        "cx": 345.6,
+        "cy": 2602.8
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 689.4,
+        "right": 750.6,
+        "top": 2569.8,
+        "bottom": 2599.8,
+        "cx": 720,
+        "cy": 2584.8
+      },
+      {
+        "name": "REUSE",
+        "left": 1065.4,
+        "right": 1123.4,
+        "top": 2596.8,
+        "bottom": 2626.8,
+        "cx": 1094.4,
+        "cy": 2611.8
+      },
+      {
+        "name": "STUDIO",
+        "left": 799.2,
+        "right": 871.2,
+        "top": 2655.3,
+        "bottom": 2685.3,
+        "cx": 835.2,
+        "cy": 2670.3
+      },
+      {
+        "name": "LOCAL",
+        "left": 511.2,
+        "right": 583.2,
+        "top": 2709.3,
+        "bottom": 2739.3,
+        "cx": 547.2,
+        "cy": 2724.3
+      },
+      {
+        "name": "VERIFY",
+        "left": 799.2,
+        "right": 871.2,
+        "top": 2758.8,
+        "bottom": 2788.8,
+        "cx": 835.2,
+        "cy": 2773.8
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 568.8,
+        "right": 640.8,
+        "top": 2803.8,
+        "bottom": 2833.8,
+        "cx": 604.8,
+        "cy": 2818.8
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 856.8,
+        "right": 928.8,
+        "top": 2826.3,
+        "bottom": 2856.3,
+        "cx": 892.8,
+        "cy": 2841.3
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 2512.6,
+      "firstRowTop": 2569.8,
+      "paragraphToFirstRowGap": 57.2,
+      "opportunityBottom": 2856.3,
+      "phaseRailTop": 2849.3,
+      "opportunityToPhaseRailGap": -7.1
+    },
+    "consoleHint": []
+  },
+  "desktopTrace": {
+    "url": "https://idc-plans-for-oakwood-immersive.vercel.app/",
+    "title": "IDC Plans for Oakwood \u2014 AI Production & Proof",
+    "viewport": {
+      "w": 1440,
+      "h": 900,
+      "dpr": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 2652,
+      "docW": 1440,
+      "clientW": 1440,
+      "docH": 20595,
+      "bodyW": 1440
+    },
+    "h1": {
+      "tag": "H1",
+      "text": "The foundation is already here. The AI degree is not.",
+      "cls": "",
+      "left": 86.4,
+      "right": 986.4,
+      "top": -2361.1,
+      "bottom": -2095.1,
+      "width": 900,
+      "height": 266.1,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "100.8px",
+      "lineHeight": "88.704px"
+    },
+    "heroParagraph": {
+      "tag": "P",
+      "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to recompose, extend, approve and prove\u2014without pretending the future already exists.",
+      "cls": "hero-thesis",
+      "left": 86.4,
+      "right": 786.4,
+      "top": -2063.1,
+      "bottom": -1916.2,
+      "width": 700,
+      "height": 146.9,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "27.2px",
+      "lineHeight": "36.72px"
+    },
+    "h1Runs": [
+      {
+        "text": "The foundation is already here.",
+        "left": 86.4,
+        "right": 903.4,
+        "top": -2374.1,
+        "bottom": -2260.1
+      },
+      {
+        "text": "The foundation is already here.",
+        "left": 86.4,
+        "right": 717.6,
+        "top": -2285.5,
+        "bottom": -2171.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 717.6,
+        "right": 894.1,
+        "top": -2285.5,
+        "bottom": -2171.5
+      },
+      {
+        "text": "The AI degree is not.",
+        "left": 86.4,
+        "right": 843,
+        "top": -2196.8,
+        "bottom": -2082.8
+      }
+    ],
+    "heroParagraphRuns": [
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 86.4,
+        "right": 710.6,
+        "top": -2061.1,
+        "bottom": -2029.1
+      },
+      {
+        "text": "Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to",
+        "left": 86.4,
+        "right": 742.8,
+        "top": -2024.4,
+        "bottom": -1992.4
+      },
+      {
+        "text": "recompose, extend, approve and prove",
+        "left": 86.4,
+        "right": 573,
+        "top": -1987.6,
+        "bottom": -1955.6
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 573,
+        "right": 683.5,
+        "top": -1987.6,
+        "bottom": -1955.6
+      },
+      {
+        "text": "\u2014without pretending the future already exists.",
+        "left": 86.4,
+        "right": 502.8,
+        "top": -1950.9,
+        "bottom": -1918.9
+      }
+    ],
+    "trace": {
+      "tag": "SECTION",
+      "text": "TRACE \u2192 COMMISSION \u2192 VERIFY Trace the room. Commission the system. Verify the proof. Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route. FIELD EVIDENCE COMMISSION PROOF A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+      "cls": "constellation trace-system",
+      "left": 0,
+      "right": 1440,
+      "top": -629.8,
+      "bottom": 1530.3,
+      "width": 1440,
+      "height": 2160,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "traceHeading": {
+      "tag": "H2",
+      "text": "Trace the room. Commission the system. Verify the proof.",
+      "cls": "",
+      "left": 86.4,
+      "right": 736.4,
+      "top": 128,
+      "bottom": 424.8,
+      "width": 650,
+      "height": 296.8,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "80.64px",
+      "lineHeight": "74.1888px"
+    },
+    "traceParagraphs": [
+      {
+        "tag": "P",
+        "text": "TRACE \u2192 COMMISSION \u2192 VERIFY",
+        "cls": "eyebrow",
+        "left": 86.4,
+        "right": 736.4,
+        "top": 99,
+        "bottom": 112,
+        "width": 650,
+        "height": 13,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "10.88px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "P",
+        "text": "Scroll to turn Oakwood\u2019s documented room, power, reusable assets and student work into one inspectable production route.",
+        "cls": "",
+        "left": 86.4,
+        "right": 626.4,
+        "top": 440.8,
+        "bottom": 490.3,
+        "width": 540,
+        "height": 49.6,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "P",
+        "text": "A room-plan trace connects Room 409, power and data, reusable assets, studio production, local inference, verification, the evidence vault and opportunity.",
+        "cls": "sr-only",
+        "left": 719.5,
+        "right": 720.5,
+        "top": 449.5,
+        "bottom": 450.5,
+        "width": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "overflowX": "hidden",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "power": [],
+    "data": [],
+    "opportunity": [],
+    "tabs": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4136.6,
+        "bottom": 4289.4,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4289.4,
+        "bottom": 4442.2,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4442.2,
+        "bottom": 4595,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4595,
+        "bottom": 4747.8,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4747.8,
+        "bottom": 4900.7,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "tabRoles": [
+      {
+        "tag": "BUTTON",
+        "text": "CS Computer science",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4136.6,
+        "bottom": 4289.4,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "NET Computer networks",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4289.4,
+        "bottom": 4442.2,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MATH Applied mathematics",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4442.2,
+        "bottom": 4595,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MIS Information systems",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4595,
+        "bottom": 4747.8,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "IT Information technology",
+        "cls": "",
+        "left": 518.4,
+        "right": 703.4,
+        "top": 4747.8,
+        "bottom": 4900.7,
+        "width": 185,
+        "height": 152.8,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    ],
+    "canvas": {
+      "tag": "CANVAS",
+      "text": "",
+      "cls": "",
+      "left": 0,
+      "right": 1440,
+      "top": 0,
+      "bottom": 900,
+      "width": 1440,
+      "height": 900,
+      "overflow": "clip",
+      "overflowX": "clip",
+      "fontSize": "16px",
+      "lineHeight": "24.8px"
+    },
+    "phases": {
+      "tag": "DIV",
+      "text": "FIELD EVIDENCE COMMISSION PROOF",
+      "cls": "constellation-phases",
+      "left": 86.4,
+      "right": 1353.6,
+      "top": 827,
+      "bottom": 855,
+      "width": 1267.2,
+      "height": 28,
+      "overflow": "visible",
+      "overflowX": "visible",
+      "fontSize": "9.92px",
+      "lineHeight": "normal"
+    },
+    "phaseSpans": [
+      {
+        "tag": "SPAN",
+        "text": "FIELD EVIDENCE",
+        "cls": "",
+        "left": 86.4,
+        "right": 190.8,
+        "top": 844,
+        "bottom": 855,
+        "width": 104.5,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "COMMISSION",
+        "cls": "",
+        "left": 716.3,
+        "right": 790.9,
+        "top": 844,
+        "bottom": 855,
+        "width": 74.6,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "text": "PROOF",
+        "cls": "",
+        "left": 1316.3,
+        "right": 1353.6,
+        "top": 844,
+        "bottom": 855,
+        "width": 37.3,
+        "height": 11,
+        "overflow": "visible",
+        "overflowX": "visible",
+        "fontSize": "9.92px",
+        "lineHeight": "normal"
+      }
+    ],
+    "progress": 0.4998,
+    "nodes": [
+      {
+        "name": "ROOM 409",
+        "left": 287.8,
+        "right": 345.8,
+        "top": 563.3,
+        "bottom": 593.3,
+        "cx": 316.8,
+        "cy": 578.3
+      },
+      {
+        "name": "POWER / DATA",
+        "left": 689.4,
+        "right": 750.6,
+        "top": 554.2,
+        "bottom": 584.2,
+        "cx": 720,
+        "cy": 569.2
+      },
+      {
+        "name": "REUSE",
+        "left": 1094.2,
+        "right": 1152.2,
+        "top": 567.8,
+        "bottom": 597.8,
+        "cx": 1123.2,
+        "cy": 582.8
+      },
+      {
+        "name": "STUDIO",
+        "left": 741.6,
+        "right": 813.6,
+        "top": 628.5,
+        "bottom": 658.5,
+        "cx": 777.6,
+        "cy": 643.5
+      },
+      {
+        "name": "LOCAL",
+        "left": 597.6,
+        "right": 669.6,
+        "top": 682.5,
+        "bottom": 712.5,
+        "cx": 633.6,
+        "cy": 697.5
+      },
+      {
+        "name": "VERIFY",
+        "left": 741.6,
+        "right": 813.6,
+        "top": 732,
+        "bottom": 762,
+        "cx": 777.6,
+        "cy": 747
+      },
+      {
+        "name": "EVIDENCE VAULT",
+        "left": 626.4,
+        "right": 698.4,
+        "top": 777,
+        "bottom": 807,
+        "cx": 662.4,
+        "cy": 792
+      },
+      {
+        "name": "OPPORTUNITY",
+        "left": 770.4,
+        "right": 842.4,
+        "top": 804,
+        "bottom": 834,
+        "cx": 806.4,
+        "cy": 819
+      }
+    ],
+    "measurements": {
+      "paragraphBottom": 490.3,
+      "firstRowTop": 554.2,
+      "paragraphToFirstRowGap": 63.9,
+      "opportunityBottom": 834,
+      "phaseRailTop": 827,
+      "opportunityToPhaseRailGap": -7
+    },
+    "consoleHint": []
+  },
+  "logs": [
+    {
+      "method": "Network.loadingFailed",
+      "params": {
+        "requestId": "F543D23997094DC12298BA2E534FCFA3",
+        "timestamp": 721809.251531,
+        "type": "Document",
+        "errorText": "net::ERR_ABORTED",
+        "canceled": true
+      }
+    }
+  ]
+}

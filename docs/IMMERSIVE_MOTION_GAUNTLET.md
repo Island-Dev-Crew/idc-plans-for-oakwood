@@ -41,7 +41,7 @@ The first immersive prototype was also rejected after the motion director inspec
 | Gate | Required | Candidate |
 |---|---:|---:|
 | Internal blind-frame satisfaction | ≥ 8/10 | **8.4/10** |
-| Independent final-candidate score | ≥ 8.1 on every axis | **First final audit failed: mobile 7.3; corrected rerun pending** |
+| Independent final-candidate score | ≥ 8.1 on every axis | **PASS · 8.2–9.0 · orientation 8.6** |
 | Signature moment | ≥ 1 | **Oakwood field trace → commissioned proof route** |
 | Performance | ≥ 75 | **99** |
 | Accessibility | 100 | **100** |
@@ -114,6 +114,13 @@ The first immersive prototype was also rejected after the motion director inspec
 - Corrected the final Opportunity node independently so it remains separated from the bottom phase rail.
 - No desktop composition, chapter order, interaction model, or motion semantics changed.
 
+### Iteration 8 — independent Tier-3 PASS
+
+- A no-courtesy-pass rerun audited responsive correction commit `2444a72` at 390×844 and 1440×900.
+- **Every required axis cleared 8.1:** Visual impact 9.0, Scroll desire 8.6, Memorable moments 8.7, Hierarchy 8.8, Cinematic quality 8.6, Interaction innovation 8.2, and Mobile promise 8.4.
+- The critic independently measured visible hero glyphs, 34.0–46.7px Trace clearance across start/mid/end, 7.7px Opportunity-to-phase-rail separation, zero overflow, zero console errors, zero uncaught exceptions, and no desktop regression.
+- The final independent orientation score is **8.6/10 — PASS**.
+
 ### Current internal frame assessment
 
 | Frame | Assessment |
@@ -170,7 +177,9 @@ These are internal blind-frame scores, not a substituted independent reviewer ve
 - `qa/10x/*-final.png` — clean desktop/mobile hero and foundation frames.
 - `qa/10x/portable-mobile.png` — portable file opened directly from disk with no external requests.
 - `docs/OAKWOOD_2025_2027_FOUNDATION_AUDIT.md` — page-cited public-foundation research and claim-lane mapping.
+- `qa/tier3/INDEPENDENT_FINAL_AUDIT.md` — complete final independent scorecard and measurements.
+- `qa/tier3/metrics.json` and seven PNG frames — durable mobile/desktop Tier-3 evidence.
 
 ## Release status
 
-**Responsive correction commit `2444a72` passes coded technical, provenance, portable-delivery, internal-frame, and mobile-signature-clearance gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** The exact-candidate independent audit passed six axes but failed Mobile promise at 7.3. Both cited defects are corrected and deployed; a focused independent rerun is pending. No independent Tier-3 pass is claimed unless every axis returns at least 8.1.
+**Responsive correction commit `2444a72` passes coded technical, provenance, portable-delivery, internal-frame, mobile-signature-clearance, and independent Tier-3 gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** The independent rerun scored every axis at or above 8.1, with an 8.6/10 orientation score. The candidate is independently Tier-3-passed and ready for Jon's direct review; no canonical promotion has occurred.
