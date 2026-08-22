@@ -5,7 +5,7 @@
       "console_errors": [],
       "external_font_requests": [],
       "overflow_px": 0,
-      "section_anchor_top": 440.86,
+      "section_anchor_top": 435.08,
       "skip_link_top": -100,
       "all_tabs_select": true,
       "tab_titles": [
@@ -23,14 +23,14 @@
       "official_marketing_bounded": true,
       "llms_txt": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 9.1
+      "raf_p95_ms": 8.8
     },
     "mobile": {
       "http": 200,
       "console_errors": [],
       "external_font_requests": [],
       "overflow_px": 0,
-      "section_anchor_top": 759.19,
+      "section_anchor_top": 738.19,
       "skip_link_top": -100,
       "all_tabs_select": true,
       "tab_titles": [
@@ -48,7 +48,7 @@
       "official_marketing_bounded": true,
       "llms_txt": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 8.7
+      "raf_p95_ms": 9
     },
     "reduced_motion": {
       "animated": 0,
