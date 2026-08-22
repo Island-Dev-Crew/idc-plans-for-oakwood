@@ -6,6 +6,8 @@
 
 - AAMU material is labeled verified public fact and links to official AAMU sources.
 - Oakwood material is labeled Oakwood verified public fact and links to the official 2025–2027 bulletin and degree pages.
+- Oakwood's public references to AI, cybersecurity, cloud computing, and modern labs are labeled official marketing claims; they are not treated as proof of an approved AI program or named AI lab.
+- Official-source conflicts are preserved: the B.S. Computer Science curricula total 120 and 121 hours in overlapping bulletin presentations, and Applied Mathematics catalog metadata conflicts with the program title.
 - IDC work is labeled IDC documented evidence.
 - Curriculum recomposition is an inference, not an approved Oakwood curriculum.
 - Lab, program and launch concepts are proposed targets unless explicitly stated otherwise.
@@ -16,9 +18,12 @@
 - [Strategy experience](https://idc-plans-for-oakwood-immersive.vercel.app/)
 - [Oakwood 2025–2027 Bulletin](https://catalog.oakwood.edu/sites/default/files/pdf/pdf_generator/20252027-undergraduate-and-graduate-bulletin.pdf?1756418115=)
 - [Oakwood B.S. in Computer Science](https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0)
+- [Oakwood B.A. in Computer Networks](https://catalog.oakwood.edu/computer-science/bachelor-of-arts/bachelor-of-arts-in-computer-networks)
+- [Oakwood Computer Science minor](https://catalog.oakwood.edu/computer-science/minor/minor-in-computer-science)
 - [Oakwood B.S. in Management Information Systems](https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information)
 - [Oakwood Applied Mathematics](https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics)
 - [Oakwood adult B.S. in Information Technology](https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology)
+- [Oakwood technology-program page](https://oakwood.edu/computer-science-computer-networks-information-technology/)
 - [AAMU 2026–2027 Undergraduate Bulletin](https://www.aamu.edu/academics/catalogs/_documents/undergraduate-bulletins/undergraduate-bulletin-2026-2027.pdf)
 - [IDC Oakwood AI Studio and Engineering Lab](https://oakwood-ai-hub.vercel.app/ai-lab-idc/)
 - [Oakwood Campus Companion](https://ou-campus-companion-murex.vercel.app/)

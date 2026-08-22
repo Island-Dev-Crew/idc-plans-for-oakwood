@@ -1,36 +1,150 @@
 [
   {
-    "slug": "aws-mlu-regional-lead",
+    "id": "01",
+    "institution": "aamu",
+    "source_type": "official-bulletin",
+    "verification": "verified",
+    "title": "AAMU Undergraduate Bulletin 2026–2027",
+    "url": "https://www.aamu.edu/academics/catalogs/_documents/undergraduate-bulletins/undergraduate-bulletin-2026-2027.pdf",
+    "retrieved_utc": "2026-08-21T17:46:17Z"
+  },
+  {
+    "id": "02",
+    "institution": "aamu",
+    "source_type": "official-announcement",
+    "verification": "verified",
+    "title": "AAMU named AWS–MLU regional lead",
     "url": "https://www.aamu.edu/about/inside-aamu/news/designation-follows-aamu-hosting-national-artificial-intelligence-summit.html",
-    "title": "Designation Follows AAMU Hosting National HBCU Artificial Intelligence Summit - Alabama A&M University",
-    "retrieved_utc": "2026-08-21T17:46:17.524851+00:00",
-    "characters": 6949
+    "retrieved_utc": "2026-08-21T17:46:17Z"
   },
   {
-    "slug": "ai-ml-cyber-center",
+    "id": "03",
+    "institution": "aamu",
+    "source_type": "official-center-page",
+    "verification": "verified",
+    "title": "AAMU AI/ML & Cybersecurity Center",
     "url": "https://www.aamu.edu/research-economic-development/aamu-rise/ai-cyber.html",
-    "title": "The Center for AI/ML & Cybersecurity - Alabama A&M University",
-    "retrieved_utc": "2026-08-21T17:46:17.648695+00:00",
-    "characters": 504
+    "retrieved_utc": "2026-08-21T17:46:17Z"
   },
   {
-    "slug": "ai-cage-sandia",
+    "id": "04",
+    "institution": "aamu",
+    "source_type": "official-announcement",
+    "verification": "verified",
+    "title": "AAMU + Sandia AI Cage",
     "url": "https://www.aamu.edu/about/inside-aamu/news/aamu-students-will-conduct-artificial-intelligence-ai-research.html",
-    "title": "AAMU Students Will Conduct Artificial Intelligence (AI) Research - Alabama A&M University",
-    "retrieved_utc": "2026-08-21T17:46:17.811437+00:00",
-    "characters": 4756
+    "retrieved_utc": "2026-08-21T17:46:17Z"
   },
   {
-    "slug": "undergraduate-bulletin-index",
-    "url": "https://www.aamu.edu/academics/catalogs/undergraduate-bulletin.html",
-    "title": "Undergraduate Bulletin - Alabama A&M University",
-    "retrieved_utc": "2026-08-21T17:46:17.997665+00:00",
-    "characters": 3309
+    "id": "05",
+    "institution": "oakwood",
+    "source_type": "official-bulletin",
+    "verification": "verified",
+    "title": "Oakwood 2025–2027 Undergraduate & Graduate Bulletin",
+    "url": "https://catalog.oakwood.edu/sites/default/files/pdf/pdf_generator/20252027-undergraduate-and-graduate-bulletin.pdf?1756418115=",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
   },
   {
-    "slug": "general-ai-policy",
-    "url": "https://www.aamu.edu/about/policies-procedures/_documents/5.10-general-artificial-intelligence-policy.pdf",
-    "retrieved_utc": "2026-08-21T17:46:18.276276+00:00",
-    "bytes": 223824
+    "id": "06",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "clarification-required",
+    "title": "Oakwood B.S. in Computer Science",
+    "url": "https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0",
+    "retrieved_utc": "2026-08-22T00:00:00Z",
+    "limitations": ["The official bulletin contains overlapping 120-hour and 121-hour curriculum presentations; the controlling version requires Oakwood confirmation."]
+  },
+  {
+    "id": "07",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "verified",
+    "title": "Oakwood B.S. in Management Information Systems",
+    "url": "https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "08",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "clarification-required",
+    "title": "Oakwood Applied Mathematics pathways",
+    "url": "https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics",
+    "retrieved_utc": "2026-08-22T00:00:00Z",
+    "limitations": ["Catalog metadata labels the B.S. page as Associate of Science while the title and requirements describe a bachelor's program."]
+  },
+  {
+    "id": "09",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "verified",
+    "title": "Oakwood adult B.S. in Information Technology",
+    "url": "https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology",
+    "retrieved_utc": "2026-08-22T00:00:00Z",
+    "limitations": ["Adult and Continuing Education degree-completion program requiring prior IT coursework or experience."]
+  },
+  {
+    "id": "10",
+    "institution": "idc",
+    "source_type": "site-observation",
+    "verification": "documented-not-adopted",
+    "title": "IDC Oakwood AI Studio + Engineering Lab",
+    "url": "https://oakwood-ai-hub.vercel.app/ai-lab-idc/",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "11",
+    "institution": "idc",
+    "source_type": "proposal",
+    "verification": "documented-not-adopted",
+    "title": "Oakwood AI Lab — final strategy",
+    "url": "https://oakwood-ai-hub.vercel.app/ai-lab-final/",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "12",
+    "institution": "idc",
+    "source_type": "deployed-software",
+    "verification": "documented",
+    "title": "OU Campus Companion — enhanced",
+    "url": "https://ou-campus-companion-murex.vercel.app",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "13",
+    "institution": "idc",
+    "source_type": "presentation",
+    "verification": "documented-not-adopted",
+    "title": "Original Oakwood pathway vision",
+    "url": "https://oakwood-universitys-path-9dqzx1y.gamma.site/",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "14",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "verified",
+    "title": "Oakwood B.A. in Computer Networks",
+    "url": "https://catalog.oakwood.edu/computer-science/bachelor-of-arts/bachelor-of-arts-in-computer-networks",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "15",
+    "institution": "oakwood",
+    "source_type": "official-program-page",
+    "verification": "verified",
+    "title": "Oakwood Computer Science minor",
+    "url": "https://catalog.oakwood.edu/computer-science/minor/minor-in-computer-science",
+    "retrieved_utc": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "16",
+    "institution": "oakwood",
+    "source_type": "official-marketing-page",
+    "verification": "marketing-claim-only",
+    "title": "Oakwood technology-program page",
+    "url": "https://oakwood.edu/computer-science-computer-networks-information-technology/",
+    "retrieved_utc": "2026-08-22T00:00:00Z",
+    "limitations": ["Mentions AI, cybersecurity, cloud computing, and modern labs; does not establish an approved AI program, named AI lab, dedicated budget, or implementation status."]
   }
 ]

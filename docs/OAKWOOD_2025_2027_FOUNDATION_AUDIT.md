@@ -9,15 +9,17 @@
 | Lane | Meaning |
 |---|---|
 | **Oakwood verified public fact** | Stated in the current official Oakwood bulletin/catalog. |
+| **Oakwood official marketing claim** | First-party Oakwood promotional language that must not be elevated to approved-program status. |
 | **IDC documented evidence** | Supported by IDC’s room walkthrough, proposals, deployed software, or archived artifacts; not equivalent to Oakwood adoption. |
 | **Curriculum inference** | A reasoned way existing Oakwood assets might be recomposed; requires faculty, governance, accreditation, and catalog approval. |
+| **Catalog conflict / clarification required** | Overlapping official curricula, mismatched totals, or metadata errors requiring Oakwood confirmation. |
 | **Unverified / needs confirmation** | A reported desire, funding condition, plan, staffing claim, or implementation state without a retrieved official source. |
 
 ## What is officially in place
 
-### 1. B.S. in Computer Science — verified
+### 1. B.S. in Computer Science — verified program; official credit conflict
 
-Oakwood publishes a **121-credit Bachelor of Science in Computer Science**. Its 53-credit major requirements include:
+Oakwood publishes a **Bachelor of Science in Computer Science**. The bulletin contains two overlapping curriculum presentations: one totals **120 hours** and another totals **121 hours**. The degree is verified; the controlling credit map requires registrar or department clarification. The later presentation lists a 53-credit major including:
 
 - CM 210 Computer Science I with C++
 - CM 220 Computer Science II Data Structures with C++
@@ -37,23 +39,31 @@ Oakwood publishes a **121-credit Bachelor of Science in Computer Science**. Its 
 - MA 321 Probability and Statistics I
 - Nine upper-division elective hours selected from CM, IS, IT, or EG
 
-The listed elective set includes Java, networks, selected topics, advanced networking, and independent study. **Source:** official bulletin, PDF pp. 178–180; [live degree page](https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0).
+The listed elective set includes Java, networks, selected topics, advanced networking, and independent study. **Source:** official bulletin, PDF pp. 177–180; [live degree page](https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0).
 
-### 2. B.S. in Management Information Systems — verified
+### 2. B.A. in Computer Networks and Computer Science minor — verified
+
+Oakwood publishes a **120-credit B.A. in Computer Networks** with programming, data structures, operating systems, computer architecture, networks, advanced networking, algorithms, statistics, selected topics and research. It also publishes an **18-credit Computer Science minor**. These are additional official infrastructure and secure-systems foundations, not evidence of an existing AI track. **Sources:** official bulletin, PDF pp. 175–176 and 180; [Computer Networks degree](https://catalog.oakwood.edu/computer-science/bachelor-of-arts/bachelor-of-arts-in-computer-networks); [Computer Science minor](https://catalog.oakwood.edu/computer-science/minor/minor-in-computer-science).
+
+### 3. B.S. in Management Information Systems — verified
 
 Oakwood publishes a **120-credit Bachelor of Science in Management Information Systems** designed to bridge management and technology. Its concentration includes business programming in C++, multimedia, web development, network management, advanced networks, database management, information security and policy, systems analysis/project management, and information-resource management. **Source:** official bulletin, PDF pp. 211–213; [live degree page](https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information).
 
-### 3. B.S. in Information Technology — verified, adult/continuing education
+### 4. B.S. in Information Technology — verified, adult/continuing education
 
 Oakwood publishes a **120-credit Bachelor of Science in Information Technology** under Adult and Continuing Education. Admission expects prior IT coursework or experience. The major covers algorithms, C++/data structures, computer logic, architecture, programming languages, networking, databases, information security, information policy, project management, resource management, and web/multimedia. **Source:** official bulletin, PDF pp. 287–288; [live degree page](https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology).
 
-### 4. Applied Mathematics foundation — verified
+### 5. Applied Mathematics foundation — verified program; metadata conflict
 
-Oakwood publishes Applied Mathematics pathways with concentrations in Mathematical Techniques, Quantitative Science, Computer Science, and Engineering. The shared foundation includes C++ programming, data structures, calculus, introductory statistics, linear algebra, differential equations, numerical analysis, independent study, physics, biology, and chemistry. **Source:** official bulletin, PDF pp. 163–174; [Applied Mathematics degree page](https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics); [Quantitative Science concentration](https://catalog.oakwood.edu/mathematics/bachelor-of-science/bachelor-of-science-in-applied-mathematics-quantitative-science).
+Oakwood publishes Applied Mathematics pathways with concentrations in Mathematical Techniques, Quantitative Science, Computer Science, and Engineering. The shared foundation includes C++ programming, data structures, calculus, introductory statistics, linear algebra, differential equations, numerical analysis, independent study, physics, biology, and chemistry. The live catalog metadata labels the B.S. page as “Associate of Science,” although its program title and requirements describe a bachelor’s program; that metadata conflict should be clarified before publishing a definitive map. **Source:** official bulletin, PDF pp. 163–174; [Applied Mathematics degree page](https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics); [Quantitative Science concentration](https://catalog.oakwood.edu/mathematics/bachelor-of-science/bachelor-of-science-in-applied-mathematics-quantitative-science).
 
-### 5. Physical and institutional footholds — verified only at the level stated
+### 6. Physical and institutional footholds — verified only at the level stated
 
-The bulletin states that the E. A. Cooper Science Complex houses Mathematics and Computer Science, and that McKee Business and Technology Complex includes four computer labs plus Oakwood’s Information Technology Department. **Source:** official bulletin, PDF p. 9.
+The bulletin states that the E. A. Cooper Science Complex houses Mathematics and Computer Science, that McKee Business and Technology Complex includes four computer labs plus Oakwood’s Information Technology Department, and that the Eva B. Dykes Library provides more than 40 networked computers. These facts do not establish GPU capacity, AI workstations, cloud-compute agreements, a named studio, or a dedicated AI lab. **Source:** official bulletin, PDF pp. 9 and 84.
+
+### 7. Official AI language — verified marketing claim only
+
+Oakwood’s official technology-program page says faculty guide students through emerging technologies “such as AI, cybersecurity, and cloud computing” and references “modern labs.” This is meaningful first-party language, but it does **not** verify an approved AI degree, named AI lab, funded initiative, adopted learning outcomes, dedicated hardware, or launch date. **Source:** [Oakwood Computer Science, Computer Networks, and Information Technology](https://oakwood.edu/computer-science-computer-networks-information-technology/).
 
 ## What the official bulletin does not establish
 

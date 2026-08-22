@@ -37,7 +37,8 @@ async def ordinary(browser, name, viewport):
         await tabs.nth(i).click()
         tab_results.append({
           'selected': await tabs.nth(i).get_attribute('aria-selected'),
-          'title': await page.locator('.cluster-readout h3').inner_text()
+          'title': await page.locator('.cluster-readout h3').inner_text(),
+          'readout': (await page.locator('.cluster-readout').inner_text()).lower()
         })
 
     llms = await page.request.get(BASE.rstrip('/') + '/llms.txt')
@@ -51,10 +52,13 @@ async def ordinary(browser, name, viewport):
       'skip_link_top': round(skip_top, 2),
       'all_tabs_select': all(x['selected']=='true' for x in tab_results),
       'tab_titles': [x['title'] for x in tab_results],
+      'typed_claim_tags': await page.evaluate("[...document.querySelectorAll('.claim')].every(e=>e.dataset.claimKind)"),
       'four_evidence_lanes': all(x in text for x in ['aamu','oakwood','idc × oakwood','the opening']),
-      'foundation_scan': all(x in text for x in ['522','0 exact matches','computer science','applied mathematics','information systems','information technology']),
-      'evidence_boundaries': all(x in text for x in ['oakwood verified public fact','curriculum inference','proposed target','unverified / needs confirmation']),
-      'llms_txt': llms.status==200 and llms_text.startswith('# ') and 'Evidence boundaries' in llms_text,
+      'foundation_scan': all(x in text for x in ['522','0 exact matches','computer science','computer networks','applied mathematics','information systems','information technology']),
+      'evidence_boundaries': all(x in text for x in ['oakwood verified public fact','oakwood official marketing claim','catalog conflict / clarification required','curriculum inference','proposed target','unverified / needs confirmation']),
+      'catalog_conflicts_visible': all(x in ' '.join(y['readout'] for y in tab_results) for x in ['120 / 121 hours','associate of science']),
+      'official_marketing_bounded': all(x in text for x in ['ai, cybersecurity, cloud computing','does not establish an approved ai program']),
+      'llms_txt': llms.status==200 and llms_text.startswith('# ') and 'Evidence boundaries' in llms_text and 'official-source conflicts' in llms_text.lower(),
       'raf_avg_ms': round(statistics.mean(frames),2),
       'raf_p95_ms': round(sorted(frames)[int(len(frames)*.95)],2),
     }
@@ -78,6 +82,13 @@ async def reduced(browser):
     return data
 
 async def main():
+    manifest = json.loads(Path('docs/evidence/source-manifest.json').read_text())
+    manifest_valid = (
+      len(manifest)==16 and
+      len({x['id'] for x in manifest})==16 and
+      all(x.get('institution') and x.get('source_type') and x.get('verification') and x.get('title') and x.get('url') for x in manifest) and
+      {x['id'] for x in manifest}=={f'{i:02d}' for i in range(1,17)}
+    )
     async with async_playwright() as p:
       browser = await p.chromium.launch(executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless=True)
       results = {
@@ -92,8 +103,9 @@ async def main():
       'no_overflow': all(results[x]['overflow_px']==0 for x in ['desktop','mobile']),
       'anchors_clear_fixed_header': all(results[x]['section_anchor_top']>=80 for x in ['desktop','mobile']),
       'skip_link_hidden_without_focus': all(results[x]['skip_link_top']<0 for x in ['desktop','mobile']),
-      'foundation_tabs_work': all(results[x]['all_tabs_select'] and len(set(results[x]['tab_titles']))==4 for x in ['desktop','mobile']),
-      'evidence_model_complete': all(results[x]['four_evidence_lanes'] and results[x]['foundation_scan'] and results[x]['evidence_boundaries'] for x in ['desktop','mobile']),
+      'foundation_tabs_work': all(results[x]['all_tabs_select'] and len(set(results[x]['tab_titles']))==5 for x in ['desktop','mobile']),
+      'evidence_model_complete': all(results[x]['four_evidence_lanes'] and results[x]['foundation_scan'] and results[x]['evidence_boundaries'] and results[x]['catalog_conflicts_visible'] and results[x]['official_marketing_bounded'] and results[x]['typed_claim_tags'] for x in ['desktop','mobile']),
+      'source_manifest_canonical': manifest_valid,
       'fonts_self_hosted': all(not results[x]['external_font_requests'] for x in ['desktop','mobile']),
       'machine_provenance': all(results[x]['llms_txt'] for x in ['desktop','mobile']),
       'frame_budget': all(results[x]['raf_avg_ms']<22 and results[x]['raf_p95_ms']<35 for x in ['desktop','mobile']),

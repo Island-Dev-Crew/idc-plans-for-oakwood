@@ -89,11 +89,21 @@ The first immersive prototype was also rejected after the motion director inspec
 ### Iteration 5 — public foundation + evidence instrument
 
 - Replaced the two-score comparison with four non-interchangeable evidence lanes: AAMU public program, Oakwood public foundation, IDC documented blueprint, and proposed opening.
-- Scoured Oakwood's official 522-page 2025–2027 bulletin and added verified Computer Science, Applied Mathematics, MIS, and adult Information Technology foundations.
-- Added a four-state bulletin instrument separating what each foundation can support from what remains missing.
+- Scoured Oakwood's official 522-page 2025–2027 bulletin and added verified Computer Science, Computer Networks, Applied Mathematics, MIS, and adult Information Technology foundations plus the 18-credit Computer Science minor.
+- Added a five-state bulletin instrument separating what each foundation can support from what remains missing.
 - Added explicit curriculum-inference, proposed-target, and unknown lanes; no Oakwood adoption, approval, funding, accreditation, or implementation is implied.
 - Self-hosted fonts, reduced hero/logo image payload, eliminated layout shift, and restored Lighthouse to 95/100/100/100 plus 100 Agentic Browsing.
 - Added `qa_10x.py`, machine-readable `llms.txt`, and a verified self-contained portable build.
+
+### Iteration 6 — delayed fleet reconciliation
+
+- A delayed independent critic returned **6.6/10 / FAIL**, but its audit evidence identifies the old `e88556e` candidate: it quotes the retired “The race was never...” hero and its clipped 390px state. It does not score the final `4221c92+` foundation redesign and is preserved as a valid rejection of the superseded version—not relabeled as a final verdict.
+- Added the official B.A. in Computer Networks and Computer Science minor omitted from the first foundation pass.
+- Replaced the definitive 121-credit Computer Science claim with the bulletin's actual unresolved **120 / 121-hour conflict**.
+- Flagged the Applied Mathematics catalog metadata conflict instead of silently normalizing it.
+- Added Oakwood's first-party AI/cyber/cloud/modern-labs language as an **official marketing claim**, explicitly not proof of an approved program or named lab.
+- Added McKee's four computer labs, Cooper's Mathematics/Computer Science labs, and the library's 40+ networked computers as verified baseline facilities—not evidence of AI compute.
+- Replaced `ClaimTag` text parsing with required typed claim kinds and synchronized the rendered 16-source ledger with `docs/evidence/source-manifest.json`.
 
 ### Current internal frame assessment
 
@@ -127,8 +137,10 @@ These are internal blind-frame scores, not a substituted independent reviewer ve
 `qa_10x.py` additionally fails if:
 
 - The AAMU / Oakwood / IDC / proposed-opening evidence lanes disappear or blur together.
-- The 522-page bulletin scan or four verified foundation tabs regress.
-- Curriculum inference, proposed target, and unknown labels are absent.
+- The 522-page bulletin scan or five verified foundation tabs regress.
+- Curriculum inference, proposed target, unknown, official-marketing, or catalog-conflict labels are absent.
+- Any rendered claim tag lacks an explicit typed `data-claim-kind`.
+- The canonical 16-source manifest loses required fields, unique IDs, or parity with the rendered ledger.
 - Foundation tabs lose selection behavior.
 - A fixed header covers anchor targets.
 - Horizontal overflow appears at desktop or mobile.
