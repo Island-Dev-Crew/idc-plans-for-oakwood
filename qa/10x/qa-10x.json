@@ -5,7 +5,7 @@
       "console_errors": [],
       "external_font_requests": [],
       "overflow_px": 0,
-      "section_anchor_top": 435.08,
+      "section_anchor_top": 449.08,
       "skip_link_top": -100,
       "all_tabs_select": true,
       "tab_titles": [
@@ -22,15 +22,15 @@
       "catalog_conflicts_visible": true,
       "official_marketing_bounded": true,
       "llms_txt": true,
-      "raf_avg_ms": 8.34,
-      "raf_p95_ms": 9.9
+      "raf_avg_ms": 8.33,
+      "raf_p95_ms": 10
     },
     "mobile": {
       "http": 200,
       "console_errors": [],
       "external_font_requests": [],
       "overflow_px": 0,
-      "section_anchor_top": 736.19,
+      "section_anchor_top": 737.19,
       "skip_link_top": -100,
       "all_tabs_select": true,
       "tab_titles": [
@@ -47,7 +47,7 @@
       "catalog_conflicts_visible": true,
       "official_marketing_bounded": true,
       "llms_txt": true,
-      "raf_avg_ms": 8.34,
+      "raf_avg_ms": 8.33,
       "raf_p95_ms": 10
     },
     "reduced_motion": {

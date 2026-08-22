@@ -164,4 +164,4 @@ These are internal blind-frame scores, not a substituted independent reviewer ve
 
 ## Release status
 
-**Candidate passes coded technical, provenance, portable-delivery, and corrected internal visual gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** Promotion still requires Jon's direct visual judgment; an additional independent critic rerun would be required before describing the candidate as independently Tier-3-passed.
+**Corrected application commit `03212d1` passes coded technical, provenance, portable-delivery, and internal frame gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** The first delayed critic's 6.6/10 verdict applies to superseded commit `e88556e`, not this deployment. A fresh independent final-candidate audit (`deleg_000acd0f`) is pending; no independent Tier-3 pass is claimed unless every axis returns at least 8.1.
