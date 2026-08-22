@@ -152,4 +152,4 @@ These are internal blind-frame scores, not a substituted independent reviewer ve
 
 ## Release status
 
-**Candidate passes coded technical gates and the corrected internal visual pass, but is not promoted to canonical production.** The canonical site remains the rollback-safe baseline. Promotion requires Jon's direct visual judgment; an additional independent critic rerun would be required before describing the candidate as independently Tier-3-passed.
+**Candidate passes coded technical, provenance, portable-delivery, and corrected internal visual gates. It is deployed only to `idc-plans-for-oakwood-immersive.vercel.app`; canonical production remains unchanged and was directly verified to retain its prior hero and to have no `#foundation` section.** Promotion still requires Jon's direct visual judgment; an additional independent critic rerun would be required before describing the candidate as independently Tier-3-passed.
