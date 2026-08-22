@@ -11,6 +11,7 @@ export default defineConfig({
     target: 'es2020',
     cssCodeSplit: !portable,
     assetsInlineLimit: portable ? 100000000 : 4096,
+    outDir: portable ? 'dist-portable' : 'dist',
     rollupOptions: portable ? { output: { inlineDynamicImports: true } } : undefined
   }
 })

@@ -1,0 +1,28 @@
+# IDC Plans for Oakwood
+
+> An evidence-aware August 2026 strategy experience comparing Alabama A&M University's documented public AI program, Oakwood University's verified computational foundation, and IDC's proposed Oakwood implementation blueprint.
+
+## Evidence boundaries
+
+- AAMU material is labeled verified public fact and links to official AAMU sources.
+- Oakwood material is labeled Oakwood verified public fact and links to the official 2025–2027 bulletin and degree pages.
+- IDC work is labeled IDC documented evidence.
+- Curriculum recomposition is an inference, not an approved Oakwood curriculum.
+- Lab, program and launch concepts are proposed targets unless explicitly stated otherwise.
+- Unpublished Oakwood funding, governance, faculty capacity, approval and implementation status remain unknown or need confirmation.
+
+## Primary pages and sources
+
+- [Strategy experience](https://idc-plans-for-oakwood-immersive.vercel.app/)
+- [Oakwood 2025–2027 Bulletin](https://catalog.oakwood.edu/sites/default/files/pdf/pdf_generator/20252027-undergraduate-and-graduate-bulletin.pdf?1756418115=)
+- [Oakwood B.S. in Computer Science](https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0)
+- [Oakwood B.S. in Management Information Systems](https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information)
+- [Oakwood Applied Mathematics](https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics)
+- [Oakwood adult B.S. in Information Technology](https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology)
+- [AAMU 2026–2027 Undergraduate Bulletin](https://www.aamu.edu/academics/catalogs/_documents/undergraduate-bulletins/undergraduate-bulletin-2026-2027.pdf)
+- [IDC Oakwood AI Studio and Engineering Lab](https://oakwood-ai-hub.vercel.app/ai-lab-idc/)
+- [Oakwood Campus Companion](https://ou-campus-companion-murex.vercel.app/)
+
+## Usage
+
+Use the source and claim ledger in the main experience to verify any institutional claim. Do not infer Oakwood approval, adoption, accreditation, funding or implementation from IDC's proposals.

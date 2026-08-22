@@ -1,0 +1,65 @@
+{
+  "results": {
+    "desktop": {
+      "http": 200,
+      "console_errors": [],
+      "external_font_requests": [],
+      "overflow_px": 0,
+      "section_anchor_top": 447.08,
+      "skip_link_top": -100,
+      "all_tabs_select": true,
+      "tab_titles": [
+        "Computer science",
+        "Applied mathematics",
+        "Information systems",
+        "Information technology"
+      ],
+      "four_evidence_lanes": true,
+      "foundation_scan": true,
+      "evidence_boundaries": true,
+      "llms_txt": true,
+      "raf_avg_ms": 8.34,
+      "raf_p95_ms": 9.1
+    },
+    "mobile": {
+      "http": 200,
+      "console_errors": [],
+      "external_font_requests": [],
+      "overflow_px": 0,
+      "section_anchor_top": 757.27,
+      "skip_link_top": -100,
+      "all_tabs_select": true,
+      "tab_titles": [
+        "Computer science",
+        "Applied mathematics",
+        "Information systems",
+        "Information technology"
+      ],
+      "four_evidence_lanes": true,
+      "foundation_scan": true,
+      "evidence_boundaries": true,
+      "llms_txt": true,
+      "raf_avg_ms": 8.33,
+      "raf_p95_ms": 8.9
+    },
+    "reduced_motion": {
+      "animated": 0,
+      "scanner": "none",
+      "errors": []
+    }
+  },
+  "gates": {
+    "http_ok": true,
+    "runtime_clean": true,
+    "no_overflow": true,
+    "anchors_clear_fixed_header": true,
+    "skip_link_hidden_without_focus": true,
+    "foundation_tabs_work": true,
+    "evidence_model_complete": true,
+    "fonts_self_hosted": true,
+    "machine_provenance": true,
+    "frame_budget": true,
+    "reduced_motion_static": true
+  },
+  "passed": true
+}

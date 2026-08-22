@@ -4,11 +4,11 @@ import {
   Building2, Check, ChevronRight, CircleAlert, Cloud, Code2, Cpu, Database,
   ExternalLink, Eye, FileCheck2, Fingerprint, Gauge, GraduationCap,
   Hammer, HeartHandshake, Landmark, Layers3, Link2, LockKeyhole, Menu, Microscope,
-  Network, Orbit, PanelTop, Radar, Rocket, Scale, Server, ShieldCheck, Sparkles,
+  Network, Orbit, PanelTop, Radar, Rocket, Scale, Search, Server, ShieldCheck, Sparkles,
   SquareTerminal, TestTube2, Users, Workflow, X, Zap
 } from 'lucide-react'
 
-type Claim = 'Verified public fact' | 'IDC documented evidence' | 'Planning estimate' | 'Proposed target'
+type Claim = 'Verified public fact' | 'Oakwood verified public fact' | 'IDC documented evidence' | 'Curriculum inference' | 'Unverified / needs confirmation' | 'Planning estimate' | 'Proposed target'
 
 type ProofValues = {
   artifact: number
@@ -20,22 +20,11 @@ type ProofValues = {
 }
 
 const nav = [
-  ['benchmark', 'Benchmark'], ['assets', 'What exists'], ['model', '2× model'],
+  ['benchmark', 'Evidence map'], ['foundation', 'Oakwood base'], ['assets', 'Field proof'], ['model', '2× model'],
   ['lab', '10-seat lab'], ['curriculum', 'Curriculum'], ['proof', 'Proof Ledger'],
   ['roadmap', 'Roadmap'], ['evidence', 'Evidence']
 ]
 
-const aamuScores = [
-  ['Formal academic depth', 19, 20], ['Institutional commitment', 15, 15],
-  ['Research infrastructure', 13, 15], ['Industry ecosystem', 15, 15],
-  ['Production portfolio', 8, 15], ['Governance', 8, 10], ['Physical / edge breadth', 8, 10]
-]
-
-const idcScores = [
-  ['Academic depth', 12, 20], ['Implementation specificity', 15, 15],
-  ['Production portfolio', 14, 15], ['Infrastructure relevance', 14, 15],
-  ['Responsible AI', 8, 10], ['Employer signaling', 9, 15], ['Institutional ecosystem', 6, 10]
-]
 
 const studios = [
   { n:'01', icon: SquareTerminal, title:'AI-Augmented Builder', desc:'Computer-use agents, system design, testing, deployment, observability and maintainable software.', output:'Production app + engineering evidence packet' },
@@ -53,15 +42,20 @@ const sources = [
   { id:'02', title:'AAMU named AWS–MLU regional lead', detail:'One of five institutions; faculty development, AWS curriculum, cloud resources and student pathways.', url:'https://www.aamu.edu/about/inside-aamu/news/designation-follows-aamu-hosting-national-artificial-intelligence-summit.html', type:'Verified public fact' as Claim },
   { id:'03', title:'AAMU AI/ML & Cybersecurity Center', detail:'AI/ML, threat intelligence, edge AI, data science, defense, energy, assistive tech, LLMs and VLMs.', url:'https://www.aamu.edu/research-economic-development/aamu-rise/ai-cyber.html', type:'Verified public fact' as Claim },
   { id:'04', title:'AAMU + Sandia AI Cage', detail:'Autonomy and unmanned-systems research infrastructure with funded research relationships.', url:'https://www.aamu.edu/about/inside-aamu/news/aamu-students-will-conduct-artificial-intelligence-ai-research.html', type:'Verified public fact' as Claim },
-  { id:'05', title:'IDC Oakwood AI Studio + Engineering Lab', detail:'May 26 walkthrough, 71 resource cards / 70 unique image URLs, room/power/network assessment, June 2026 proposal and budget.', url:'https://oakwood-ai-hub.vercel.app/ai-lab-idc/', type:'IDC documented evidence' as Claim },
-  { id:'06', title:'Oakwood AI Lab — final strategy', detail:'10-seat production-lab strategy, architecture, investment tiers and implementation framework.', url:'https://oakwood-ai-hub.vercel.app/ai-lab-final/', type:'IDC documented evidence' as Claim },
-  { id:'07', title:'OU Campus Companion — enhanced', detail:'Deployed application and repository artifacts used as the first Proof Ledger case.', url:'https://ou-campus-companion-murex.vercel.app', type:'IDC documented evidence' as Claim },
-  { id:'08', title:'Original Oakwood pathway vision', detail:'The nearly year-old Gamma presentation that initiated the broader enhancement/infusion concept.', url:'https://oakwood-universitys-path-9dqzx1y.gamma.site/', type:'IDC documented evidence' as Claim }
+  { id:'05', title:'Oakwood 2025–2027 Undergraduate & Graduate Bulletin', detail:'Official 522-page catalog governing the 2026–27 academic year and publishing current degrees, requirements and courses.', url:'https://catalog.oakwood.edu/sites/default/files/pdf/pdf_generator/20252027-undergraduate-and-graduate-bulletin.pdf?1756418115=', type:'Oakwood verified public fact' as Claim },
+  { id:'06', title:'Oakwood B.S. in Computer Science', detail:'Official 121-credit degree with algorithms, data structures, systems, linear algebra, probability/statistics, numerical analysis and research.', url:'https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0', type:'Oakwood verified public fact' as Claim },
+  { id:'07', title:'Oakwood B.S. in Management Information Systems', detail:'Official 120-credit degree spanning programming, networks, databases, information security, project management and business.', url:'https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information', type:'Oakwood verified public fact' as Claim },
+  { id:'08', title:'Oakwood Applied Mathematics pathways', detail:'Official quantitative foundation with Computer Science and Quantitative Science concentrations.', url:'https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics', type:'Oakwood verified public fact' as Claim },
+  { id:'09', title:'Oakwood adult B.S. in Information Technology', detail:'Official 120-credit adult/continuing-education degree requiring prior IT coursework or experience.', url:'https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology', type:'Oakwood verified public fact' as Claim },
+  { id:'10', title:'IDC Oakwood AI Studio + Engineering Lab', detail:'May 26 walkthrough, 71 resource cards / 70 unique image URLs, room/power/network assessment, June 2026 proposal and budget.', url:'https://oakwood-ai-hub.vercel.app/ai-lab-idc/', type:'IDC documented evidence' as Claim },
+  { id:'11', title:'Oakwood AI Lab — final strategy', detail:'10-seat production-lab strategy, architecture, investment tiers and implementation framework.', url:'https://oakwood-ai-hub.vercel.app/ai-lab-final/', type:'IDC documented evidence' as Claim },
+  { id:'12', title:'OU Campus Companion — enhanced', detail:'Deployed application and repository artifacts used as the first Proof Ledger case.', url:'https://ou-campus-companion-murex.vercel.app', type:'IDC documented evidence' as Claim },
+  { id:'13', title:'Original Oakwood pathway vision', detail:'The nearly year-old Gamma presentation that initiated the broader enhancement/infusion concept.', url:'https://oakwood-universitys-path-9dqzx1y.gamma.site/', type:'IDC documented evidence' as Claim }
 ]
 
 function ClaimTag({ children }: { children: React.ReactNode }) {
   const text = String(children)
-  const cls = text.startsWith('Verified') ? 'verified' : text.startsWith('IDC') ? 'documented' : text.startsWith('Planning') ? 'estimate' : 'target'
+  const cls = text.startsWith('Oakwood') ? 'oakwood' : text.startsWith('Verified') ? 'verified' : text.startsWith('IDC') ? 'documented' : text.startsWith('Curriculum') ? 'inference' : text.startsWith('Unverified') ? 'unknown' : text.startsWith('Planning') ? 'estimate' : 'target'
   return <span className={`claim ${cls}`}>{children}</span>
 }
 
@@ -76,21 +70,6 @@ function SectionHead({ index, eyebrow, title, intro }: { index:string, eyebrow:s
   </header>
 }
 
-function ScorePanel({ name, score, confidence, items, tone }: { name:string, score:number, confidence:string, items:(string|number)[][], tone:'maroon'|'gold' }) {
-  return <article className={`score-panel ${tone} reveal`}>
-    <div className="score-top">
-      <div><p className="micro">PUBLIC PROGRAM ASSESSMENT</p><h3>{name}</h3></div>
-      <div className="score-number"><span>{score}</span><small>/100</small></div>
-    </div>
-    <div className="score-bars">
-      {items.map(([label,val,max]) => <div className="score-row" key={String(label)}>
-        <div className="score-label"><span>{label}</span><b>{val}/{max}</b></div>
-        <div className="bar"><i style={{width:`${Number(val)/Number(max)*100}%`}} /></div>
-      </div>)}
-    </div>
-    <div className="confidence"><Gauge size={16}/><span>Assessment confidence</span><b>{confidence}</b></div>
-  </article>
-}
 
 function LabMap() {
   const [active, setActive] = useState('Shared local inference')
@@ -146,6 +125,79 @@ function ProofCalculator() {
       <p className="micro">BODY-OF-WORK CONFIDENCE</p><h3>{grade}</h3>
       <p>Credentials become believable when a recruiter can move from the claim to the artifact, then to the test and contribution trail.</p>
       {(noArtifact||noEvidence)&&<div className="cap-alert"><CircleAlert size={16}/>Anti-gaming cap applied: {noArtifact?'no reproducible shipped artifact.':'evidence packet is incomplete.'}</div>}
+    </div>
+  </div>
+}
+
+const foundationClusters = [
+  {
+    id:'CS', title:'Computer science', degree:'B.S. · 121 credits', pages:'PDF 178–180',
+    verified:['Data structures','Algorithms','Operating systems','Programming languages','Computer architecture','Independent research'],
+    bridge:'A strong software-and-systems spine for AI study.',
+    gap:'No named AI, machine-learning, deep-learning, NLP or computer-vision course appears in the current bulletin.',
+    url:'https://catalog.oakwood.edu/computer-science/bachelor-of-science/bachelor-of-science-in-computer-science-0'
+  },
+  {
+    id:'MATH', title:'Applied mathematics', degree:'B.S. pathways · 120–128 credits', pages:'PDF 163–174',
+    verified:['Calculus I–III','Linear algebra','Probability + statistics','Numerical analysis','Differential equations','Quantitative science'],
+    bridge:'The mathematical substrate required for serious model work already exists.',
+    gap:'AI-specific mathematical applications, model evaluation and data-science sequencing remain curriculum work.',
+    url:'https://catalog.oakwood.edu/mathematics/associate-of-science/bachelor-of-science-in-applied-mathematics'
+  },
+  {
+    id:'MIS', title:'Information systems', degree:'B.S. · 120 credits', pages:'PDF 211–213',
+    verified:['Database management','Information security','Business programming','Networks','Systems analysis','Project management'],
+    bridge:'A governance, deployment and organizational-operations lane is already teachable.',
+    gap:'Model governance, AI risk, data governance and production evaluation are not named as current courses.',
+    url:'https://catalog.oakwood.edu/business-and-information-systems/bachelor-of-science/bachelor-of-science-in-management-information'
+  },
+  {
+    id:'IT', title:'Information technology', degree:'Adult B.S. · 120 credits', pages:'PDF 287–288',
+    verified:['Algorithms','Programming','Networks','Modern databases','Information security','Resource management'],
+    bridge:'An adult/upskilling route could connect institutional AI capacity to working professionals.',
+    gap:'The program requires prior IT preparation and is not evidence of an undergraduate AI major.',
+    url:'https://catalog.oakwood.edu/adult-and-continuing-education/bachelor-of-science/bachelor-of-science-in-information-technology'
+  }
+]
+
+function EvidenceMap() {
+  const lanes = [
+    {mark:'A', title:'AAMU', tag:'Verified public fact' as Claim, lead:'Published AI program', text:'125-credit B.S. in Artificial Intelligence plus research center, AI Cage and AWS–MLU role.', status:'INSTITUTIONALIZED'},
+    {mark:'O', title:'Oakwood', tag:'Oakwood verified public fact' as Claim, lead:'Computational foundation', text:'Computer Science, Applied Mathematics, MIS and adult IT—real academic material, but no named AI pathway in the current bulletin.', status:'FOUNDATION'},
+    {mark:'I', title:'IDC × Oakwood', tag:'IDC documented evidence' as Claim, lead:'Implementation blueprint', text:'Room audit, reusable assets, lab strategy, curriculum studios, Campus Companion and proof-ledger system.', status:'DOCUMENTED'},
+    {mark:'?', title:'The opening', tag:'Curriculum inference' as Claim, lead:'Recompose + extend', text:'A proposed AI degree, concentration, minor or studio overlay still requires faculty design, governance, accreditation review and ownership.', status:'UNDECIDED'}
+  ]
+  return <div className="evidence-map reveal">
+    {lanes.map((lane,i)=><article key={lane.title} className={`evidence-lane lane-${i}`}>
+      <div className="lane-mark">{lane.mark}</div><ClaimTag>{lane.tag}</ClaimTag>
+      <p className="lane-status">{lane.status}</p><h3>{lane.title}</h3><strong>{lane.lead}</strong><p>{lane.text}</p>
+    </article>)}
+  </div>
+}
+
+function FoundationInstrument() {
+  const [active,setActive]=useState(0)
+  const item=foundationClusters[active]
+  return <div className="foundation-instrument reveal">
+    <div className="bulletin-scan">
+      <div className="scan-head"><Search/><span>OFFICIAL BULLETIN QUERY</span><b>2025—2027</b></div>
+      <div className="scan-number"><strong>522</strong><span>pages examined</span></div>
+      <div className="scan-absence">
+        {['ARTIFICIAL INTELLIGENCE','MACHINE LEARNING','DATA SCIENCE','CYBERSECURITY'].map(term=><div key={term}><span>{term}</span><b>0 exact matches</b></div>)}
+      </div>
+      <p>Absence from the bulletin is not proof that no internal exploration exists. It is proof that no named program or course under these exact terms is published there.</p>
+    </div>
+    <div className="foundation-console">
+      <div className="cluster-tabs" role="tablist" aria-label="Verified Oakwood academic foundations">
+        {foundationClusters.map((x,i)=><button role="tab" aria-selected={active===i} key={x.id} onClick={()=>setActive(i)}><span>{x.id}</span><b>{x.title}</b></button>)}
+      </div>
+      <div className="cluster-readout" role="tabpanel" aria-live="polite">
+        <div className="readout-meta"><ClaimTag>Oakwood verified public fact</ClaimTag><span>{item.pages}</span></div>
+        <h3>{item.title}</h3><p className="degree-line">{item.degree}</p>
+        <div className="course-chips">{item.verified.map(x=><span key={x}>{x}</span>)}</div>
+        <div className="bridge-gap"><div><small>WHAT THIS CAN SUPPORT</small><p>{item.bridge}</p></div><div><small>WHAT IS STILL MISSING</small><p>{item.gap}</p></div></div>
+        <a href={item.url} target="_blank" rel="noreferrer">Inspect official degree <ExternalLink size={15}/></a>
+      </div>
     </div>
   </div>
 }
@@ -249,7 +301,7 @@ export default function App() {
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="progress" style={{width:`${progress}%`}} />
     <header className="topbar">
-      <a className="brand" href="#top" aria-label="IDC × OAKWOOD home"><img src="./assets/idc-mark.png" alt=""/><span>IDC <i>×</i> OAKWOOD</span></a>
+      <a className="brand" href="#top" aria-label="IDC × OAKWOOD home"><img src="./assets/idc-mark-64.webp" width="64" height="64" alt=""/><span>IDC <i>×</i> OAKWOOD</span></a>
       <nav aria-label="Primary navigation">
         {nav.slice(0,5).map(([id,label])=><a className={activeSection===id?'active':''} key={id} href={`#${id}`}>{label}</a>)}
       </nav>
@@ -260,15 +312,15 @@ export default function App() {
 
     <main id="main">
       <section className="hero" id="top">
-        <div className="hero-photo"><img fetchPriority="high" decoding="async" src="./assets/concept-lab-hero.webp" alt="Concept rendering of an Oakwood AI production studio"/><span><Sparkles size={14}/> Concept rendering · proposed future state</span></div>
+        <div className="hero-photo"><img fetchPriority="high" decoding="async" src="./assets/concept-lab-hero-1280.webp" srcSet="./assets/concept-lab-hero-640.webp 640w, ./assets/concept-lab-hero-1280.webp 1280w" sizes="100vw" width="1376" height="768" alt="Concept rendering of an Oakwood AI production studio"/><span><Sparkles size={14}/> Concept rendering · proposed future state</span></div>
         <div className="hero-grain" />
         <div className="hero-copy">
-          <div className="hero-meta"><span>IDC PLANS FOR OAKWOOD</span><span>AUGUST 2026</span><span>IMMERSIVE SYSTEM · MOTION PASS</span></div>
-          <h1>The race was never to announce <em>AI</em> first.</h1>
-          <p className="hero-thesis">It is to turn AI into <strong>proof</strong>—work students can ship, defend, and carry into opportunity.</p>
-          <div className="hero-actions"><a className="button primary" href="#benchmark">Read the benchmark <ArrowDown size={18}/></a><a className="button ghost" href="#model">See the 2× model <ArrowUpRight size={18}/></a></div>
+          <div className="hero-meta"><span>IDC PLANS FOR OAKWOOD</span><span>AUGUST 2026</span><span>PUBLIC RECORD × FIELD EVIDENCE</span></div>
+          <h1>The foundation is already here. <em>The AI degree is not.</em></h1>
+          <p className="hero-thesis">Oakwood has verified computational depth. IDC has a documented implementation blueprint. The opening is to <strong>recompose, extend, approve and prove</strong>—without pretending the future already exists.</p>
+          <div className="hero-actions"><a className="button primary" href="#foundation">Examine the foundation <ArrowDown size={18}/></a><a className="button ghost" href="#benchmark">See the evidence map <ArrowUpRight size={18}/></a></div>
         </div>
-        <div className="hero-ledger"><div><b>86</b><span>AAMU public program</span></div><div><b>78</b><span>Current IDC blueprint</span></div><div><b>01</b><span>Oakwood opening</span></div></div>
+        <div className="hero-ledger"><div><b>522</b><span>official pages examined</span></div><div><b>04</b><span>verified foundations</span></div><div><b>00</b><span>named AI pathways</span></div></div>
       </section>
 
       <section className="reality paper" id="reality">
@@ -288,30 +340,41 @@ export default function App() {
       <ProofTrace/>
 
       <section className="benchmark" id="benchmark">
-        <SectionHead index="01" eyebrow="A LAYER-AWARE BENCHMARK" title="AAMU institutionalized. IDC operationalized." intro="AAMU is a degree and research ecosystem. IDC’s Oakwood work is an implementation and production blueprint. The comparison is most useful when it respects that difference." />
-        <div className="correction reveal"><CircleAlert/><div><b>Evidence correction</b><p>AAMU is not proven to be the first HBCU ever to offer AI programming. What the official evidence does establish is substantial: a published 125-credit B.S. in Artificial Intelligence for 2026–2027, an existing AI concentration, an AI Cage, a research center, university AI policy and AWS–MLU regional-lead status.</p></div><ClaimTag>Verified public fact</ClaimTag></div>
-        <div className="score-grid"><ScorePanel name="Alabama A&M" score={86} confidence="0.90" items={aamuScores} tone="maroon"/><ScorePanel name="IDC × Oakwood — current" score={78} confidence="0.84" items={idcScores} tone="gold"/></div>
-        <div className="benchmark-insight reveal"><p className="micro">THE STRATEGIC INTERPRETATION</p><blockquote>AAMU’s moat is institutional depth. Oakwood’s opening is a smaller, faster system that makes student capability <em>visible and trusted</em>.</blockquote></div>
+        <SectionHead index="01" eyebrow="FOUR LANES · NO CATEGORY ERROR" title="Public program. Public foundation. Documented blueprint. Unfinished opening." intro="The fairest comparison does not force unlike evidence into one score. It shows what each body of evidence actually proves—and where institutional decisions still begin." />
+        <div className="correction reveal"><CircleAlert/><div><b>Evidence correction</b><p>AAMU publishes an AI degree and ecosystem. Oakwood publishes a substantial computational foundation, but the current 2025–2027 bulletin contains no named AI pathway. IDC documents a proposed route from that foundation to a production-and-proof system; it does not document Oakwood adoption.</p></div><ClaimTag>Oakwood verified public fact</ClaimTag></div>
+        <EvidenceMap/>
+        <div className="benchmark-insight reveal"><p className="micro">THE STRATEGIC INTERPRETATION</p><blockquote>Oakwood is not starting from zero. It is starting from <em>distributed strength</em> that has not yet been assembled into an AI claim.</blockquote></div>
         <div className="curriculum-strip reveal">
-          <div className="strip-head"><GraduationCap/><div><p className="micro">AAMU · 125 CREDIT HOURS</p><h3>Published AI major spine</h3></div></div>
+          <div className="strip-head"><GraduationCap/><div><p className="micro">AAMU · 125 CREDIT HOURS</p><h3>What an institutionalized AI major looks like</h3></div></div>
           <div className="year-columns">
             <div><span>YEAR 1</span><p>Calculus I–II · ethics · computing · Python II · composition</p></div>
             <div><span>YEAR 2</span><p>Physics I–II · programming · Java · discrete structures · data structures</p></div>
             <div><span>YEAR 3</span><p>Linear algebra · AI conceptions · graphics · systems · robotics · cognitive psychology</p></div>
             <div><span>YEAR 4</span><p>ML · AI · deep learning · RL · NLP · speech · HPC · two-part capstone</p></div>
           </div>
-          <a href={sources[0].url} target="_blank" rel="noreferrer">Open official bulletin <ExternalLink size={15}/></a>
+          <a href={sources[0].url} target="_blank" rel="noreferrer">Open official AAMU bulletin <ExternalLink size={15}/></a>
         </div>
       </section>
 
+      <section className="foundation paper" id="foundation">
+        <SectionHead index="02" eyebrow="THE PUBLIC RECORD, EXAMINED" title="The building blocks are real. The composition is still a decision." intro="The official Oakwood bulletin shows enough computer science, mathematics, information systems and technology to make an AI pathway plausible. It does not make that pathway official, complete or accredited." />
+        <FoundationInstrument/>
+        <div className="recomposition reveal">
+          <div><ClaimTag>Curriculum inference</ClaimTag><h3>Reuse the verified spine.</h3><p>Preserve algorithms, systems, programming, linear algebra, probability, numerical analysis, databases, networks, security, business and research.</p></div>
+          <div className="recompose-arrow"><span>RECOMPOSE</span><ChevronRight/></div>
+          <div><ClaimTag>Proposed target</ClaimTag><h3>Add the named AI layer.</h3><p>AI foundations, machine learning, deep learning, data engineering, NLP, vision, evaluation, responsible AI, local/edge operations and a two-stage proof capstone.</p></div>
+        </div>
+        <div className="unknown-banner reveal"><CircleAlert/><div><ClaimTag>Unverified / needs confirmation</ClaimTag><p>The chair’s stated vision, reported lab/studio funding, faculty AI capacity, governance status and launch intent remain outside the retrieved public record. They should be presented as questions for Oakwood—not facts about Oakwood.</p></div></div>
+      </section>
+
       <section className="assets paper" id="assets">
-        <SectionHead index="02" eyebrow="THE BODY OF WORK ALREADY EXISTS" title="Oakwood is not starting from zero." intro="The opportunity is to compile the vision, room evidence, curriculum, infrastructure and shipped software into one institutional system—not another isolated presentation." />
+        <SectionHead index="03" eyebrow="THE FIELD RECORD" title="The proposal has touched the room." intro="The public bulletin proves academic foundation. IDC’s field record proves that the implementation thinking moved into rooms, power, data, reusable equipment and shipped software. Neither proves institutional adoption." />
         <div className="asset-mosaic">
           <article className="asset feature reveal"><img loading="lazy" decoding="async" src="./assets/evidence-power-data.webp" alt="Verified Oakwood room power and data condition"/><div className="asset-overlay"><ClaimTag>IDC documented evidence</ClaimTag><h3>70 unique on-site images</h3><p>May 26, 2026 walkthrough of Rooms 409, 407, 305/310, MDF, power, data, HVAC, windows and reusable assets. The public resource page contains 71 cards; one image URL is duplicated.</p></div></article>
           <article className="asset reveal"><img loading="lazy" decoding="async" src="./assets/evidence-benches.webp" alt="Reusable blue engineering benches at Oakwood"/><div><span className="micro">REUSE BEFORE REPLACE</span><h3>Engineering benches</h3></div></article>
           <article className="asset reveal"><img loading="lazy" decoding="async" src="./assets/evidence-printers.webp" alt="Existing 3D printers at Oakwood"/><div><span className="micro">EXISTING CAPACITY</span><h3>Fabrication foothold</h3></div></article>
-          <article className="asset dark reveal"><div className="big-mark">Γ</div><div><span className="micro">VISION · 2025</span><h3>Oakwood’s Path</h3><p>The original Gamma narrative established the institution-wide infusion theme.</p><a href={sources[7].url} target="_blank" rel="noreferrer">Open original <ArrowUpRight/></a></div></article>
-          <article className="asset dark reveal"><div className="big-mark"><Cpu/></div><div><span className="micro">IMPLEMENTATION · 2026</span><h3>AI Lab IDC</h3><p>Room-grounded build, funding firewall, budget, contractor lanes and execution sequence.</p><a href={sources[4].url} target="_blank" rel="noreferrer">Open lab hub <ArrowUpRight/></a></div></article>
+          <article className="asset dark reveal"><div className="big-mark">Γ</div><div><span className="micro">VISION · 2025</span><h3>Oakwood’s Path</h3><p>The original Gamma narrative established the institution-wide infusion theme.</p><a href={sources[12].url} target="_blank" rel="noreferrer">Open original <ArrowUpRight/></a></div></article>
+          <article className="asset dark reveal"><div className="big-mark"><Cpu/></div><div><span className="micro">IMPLEMENTATION · 2026</span><h3>AI Lab IDC</h3><p>Room-grounded build, funding firewall, budget, contractor lanes and execution sequence.</p><a href={sources[9].url} target="_blank" rel="noreferrer">Open lab hub <ArrowUpRight/></a></div></article>
         </div>
         <div className="campus-case reveal">
           <div className="case-copy"><p className="eyebrow">FIRST PROOF LEDGER CASE</p><h3>Campus Companion</h3><p>The CS Club’s 12-student build was a meaningful initiative. IDC’s enhancement shows what happens when that initiative is paired with AI-assisted engineering, accessibility, reliability, richer content and a production closeout discipline.</p><div className="case-rule"><HeartHandshake/><span>The lesson is not “AI replaced the students.” It is “AI mentorship increased what the team could finish, verify and show.”</span></div><a className="text-link" href="https://ou-campus-showcase.vercel.app" target="_blank" rel="noreferrer">View comparison evidence <ArrowUpRight/></a></div>
@@ -320,7 +383,7 @@ export default function App() {
       </section>
 
       <section className="model" id="model">
-        <SectionHead index="03" eyebrow="THE 2× IMPROVEMENT" title="Foundations. Studio. Proof." intro="Not twice the hardware. Twice the conversion from coursework into trusted opportunity." />
+        <SectionHead index="04" eyebrow="THE 2× IMPROVEMENT" title="Foundations. Studio. Proof." intro="Not twice the hardware. Twice the conversion from coursework into trusted opportunity." />
         <div className="three-lanes reveal">
           <article><span>01</span><BookOpen/><h3>Foundations</h3><p>Mathematics, systems, algorithms, ML, security and responsible-AI rigor that can survive beyond the tool of the month.</p><ul><li>Calculus · linear algebra · probability</li><li>Data structures · systems · networks</li><li>ML · NLP · vision · robotics</li><li>Policy · privacy · accessibility</li></ul></article>
           <article className="accent"><span>02</span><Rocket/><h3>Studio</h3><p>Every semester closes on a deployed application, reproducible experiment, physical system or community service.</p><ul><li>Cloud + local + edge workflows</li><li>Cross-disciplinary problem sponsors</li><li>Employer and user review</li><li>Maintenance after demo day</li></ul></article>
@@ -330,7 +393,7 @@ export default function App() {
       </section>
 
       <section className="lab paper" id="lab">
-        <SectionHead index="04" eyebrow="THE PHYSICAL OPERATING SYSTEM" title="A 10-seat lab designed around work—not brands." intro="Vendor-neutral by principle: procure memory, support, throughput, reliability and curriculum fit. Validate Oakwood’s actual workloads before scaling one architecture." />
+        <SectionHead index="05" eyebrow="THE PHYSICAL OPERATING SYSTEM" title="A 10-seat lab designed around work—not brands." intro="Vendor-neutral by principle: procure memory, support, throughput, reliability and curriculum fit. Validate Oakwood’s actual workloads before scaling one architecture." />
         <LabMap/>
         <div className="gates reveal">
           <div className="gates-title"><LockKeyhole/><div><p className="micro">NON-NEGOTIABLE PROCUREMENT GATES</p><h3>Infrastructure before spectacle.</h3></div></div>
@@ -340,13 +403,13 @@ export default function App() {
       </section>
 
       <section className="curriculum" id="curriculum">
-        <SectionHead index="05" eyebrow="THE STUDIO CURRICULUM" title="Eight studios. Eight finished products." intro="A four-year AI/CS foundation can adopt these as rotating studios, minors, certificates or capstone overlays. Each terminates in evidence, not attendance." />
+        <SectionHead index="06" eyebrow="THE STUDIO CURRICULUM" title="Eight studios. Eight finished products." intro="A four-year AI/CS foundation can adopt these as rotating studios, minors, certificates or capstone overlays. Each terminates in evidence, not attendance." />
         <div className="studio-list">{studios.map(({n,icon:Icon,title,desc,output})=><article className="studio reveal" key={n}><span className="studio-num">{n}</span><Icon/><div><h3>{title}</h3><p>{desc}</p></div><aside><small>PROOF OUTPUT</small><b>{output}</b></aside></article>)}</div>
         <div className="ethics-spine reveal"><Scale/><div><p className="eyebrow">OAKWOOD’S DISTINCTIVE LENS</p><h3>Responsible AI becomes operational—not ornamental.</h3><p>The Adventist formation layer can connect human dignity, stewardship, truthfulness, service, rest and accountability to concrete controls: consent, provenance, access, evaluation, human review and incident response. John Lennox’s <em>2084 and the AI Revolution</em> can remain one seminar voice, not the whole governance framework.</p></div></div>
       </section>
 
       <section className="proof paper" id="proof">
-        <SectionHead index="06" eyebrow="THE EMPLOYER SIGNAL" title="A transcript says what was studied. The Proof Ledger shows what survived contact with reality." intro="A 100-point body-of-work confidence score makes claims inspectable—while anti-gaming caps prevent polish from outrunning evidence." />
+        <SectionHead index="07" eyebrow="THE EMPLOYER SIGNAL" title="A transcript says what was studied. The Proof Ledger shows what survived contact with reality." intro="A 100-point body-of-work confidence score makes claims inspectable—while anti-gaming caps prevent polish from outrunning evidence." />
         <ProofCalculator/>
         <div className="portability reveal"><div><Link2/><h3>LinkedIn is a destination—not the source of truth.</h3><p>The ledger can generate a public credential page for Featured, an Open Badge / verifiable record, concise skill statements and an employer evidence packet.</p></div><div className="boundary"><CircleAlert/><p><b>Boundary:</b> this does not claim LinkedIn currently permits a custom candidate-ranking algorithm or open scoring API. Direct integration requires supported credential surfaces or a formal partner API.</p></div></div>
         <div className="ledger-fields reveal">
@@ -355,7 +418,7 @@ export default function App() {
       </section>
 
       <section className="roadmap" id="roadmap">
-        <SectionHead index="07" eyebrow="FROM PROPOSAL TO PROOF" title="One year. Four gates. No theater." intro="Success is measured in verified artifacts, resolved risks, student opportunity and repeatable institutional capacity—not equipment delivery alone." />
+        <SectionHead index="08" eyebrow="FROM PROPOSAL TO PROOF" title="One year. Four gates. No theater." intro="Success is measured in verified artifacts, resolved risks, student opportunity and repeatable institutional capacity—not equipment delivery alone." />
         <div className="roadmap-line reveal">
           {[
             ['0–30','Govern','Charter · room validation · workload bake-off · curriculum council · employer circle'],
@@ -369,12 +432,12 @@ export default function App() {
       </section>
 
       <section className="evidence paper" id="evidence">
-        <SectionHead index="08" eyebrow="SOURCE & CLAIM LEDGER" title="Confidence comes from showing the seams." intro="Public facts, IDC evidence, estimates and proposed targets are intentionally separated. Open the sources; challenge the interpretation." />
+        <SectionHead index="09" eyebrow="SOURCE & CLAIM LEDGER" title="Confidence comes from showing the seams." intro="AAMU public facts, Oakwood public facts, IDC evidence, curriculum inferences, unknowns and proposed targets are intentionally separated. Open the sources; challenge the interpretation." />
         <div className="source-list">{sources.map(s=><a className="source reveal" href={s.url} target="_blank" rel="noreferrer" key={s.id}><span>{s.id}</span><div><ClaimTag>{s.type}</ClaimTag><h3>{s.title}</h3><p>{s.detail}</p></div><ExternalLink/></a>)}</div>
-        <div className="evidence-note reveal"><FileCheck2/><div><h3>What the grade does—and does not—claim</h3><p>It grades public evidence available on August 21, 2026. It cannot independently verify classroom delivery quality, unpublished faculty capacity, student enrollment, procurement approval or outcomes that have not matured. IDC impact targets remain proposed until cohorts and employer results are measured.</p></div></div>
+        <div className="evidence-note reveal"><FileCheck2/><div><h3>What this record does—and does not—claim</h3><p>It maps public and documented evidence available on August 22, 2026. It cannot independently verify classroom delivery quality, unpublished faculty capacity, student enrollment, internal funding, curriculum approval, procurement approval or outcomes that have not matured. IDC proposals remain proposals until Oakwood adopts and measures them.</p></div></div>
       </section>
     </main>
 
-    <footer><div className="footer-brand"><img src="./assets/idc-mark.png" alt="Island Development Crew mark"/><div><b>Island Development Crew</b><span>AI systems · product evidence · institutional transformation</span></div></div><div className="footer-meta"><span>Prepared for Oakwood University exploration</span><span>August 21, 2026</span><span>© {year} IDC</span></div><a href="#top" aria-label="Back to top">Back to top <Zap size={16}/></a></footer>
+    <footer><div className="footer-brand"><img src="./assets/idc-mark-64.webp" width="64" height="64" alt="Island Development Crew mark"/><div><b>Island Development Crew</b><span>AI systems · product evidence · institutional transformation</span></div></div><div className="footer-meta"><span>Prepared for Oakwood University exploration</span><span>August 22, 2026</span><span>© {year} IDC</span></div><a href="#top" aria-label="Back to top">Back to top <Zap size={16}/></a></footer>
   </>
 }

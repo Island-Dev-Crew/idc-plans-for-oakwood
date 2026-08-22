@@ -12,18 +12,18 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        334944,
-        337632,
-        336189
+        332859,
+        335302,
+        334754
       ],
       "reveals_visible_by_default": true,
-      "phase_progress_width_at_end": "1229.06px",
+      "phase_progress_width_at_end": "1228.97px",
       "canvas_settles": true,
       "no_custom_cursor": true,
       "lab_pressed_semantics": true,
       "trace_commission_verify_copy": true,
       "raf_avg_ms": 8.33,
-      "raf_p95_ms": 9.4
+      "raf_p95_ms": 9
     },
     "mobile": {
       "http": 200,
@@ -37,18 +37,18 @@
       },
       "canvas_states_unique": 3,
       "canvas_png_bytes": [
-        90875,
-        92540,
-        92763
+        93036,
+        94718,
+        95196
       ],
       "reveals_visible_by_default": true,
-      "phase_progress_width_at_end": "341.047px",
+      "phase_progress_width_at_end": "341.234px",
       "canvas_settles": true,
       "no_custom_cursor": true,
       "lab_pressed_semantics": true,
       "trace_commission_verify_copy": true,
-      "raf_avg_ms": 8.33,
-      "raf_p95_ms": 9.8
+      "raf_avg_ms": 8.34,
+      "raf_p95_ms": 9.2
     },
     "reduced_motion": {
       "height": 900,
