@@ -41,7 +41,7 @@ The first immersive prototype was also rejected after the motion director inspec
 | Gate | Required | Candidate |
 |---|---:|---:|
 | Internal blind-frame satisfaction | ≥ 8/10 | **8.4/10** |
-| Independent final-candidate score | ≥ 8.1 on every axis | **Not rerun; no false pass claimed** |
+| Independent final-candidate score | ≥ 8.1 on every axis | **First final audit failed: mobile 7.3; corrected rerun pending** |
 | Signature moment | ≥ 1 | **Oakwood field trace → commissioned proof route** |
 | Performance | ≥ 75 | **99** |
 | Accessibility | 100 | **100** |
@@ -104,6 +104,15 @@ The first immersive prototype was also rejected after the motion director inspec
 - Added Oakwood's first-party AI/cyber/cloud/modern-labs language as an **official marketing claim**, explicitly not proof of an approved program or named lab.
 - Added McKee's four computer labs, Cooper's Mathematics/Computer Science labs, and the library's 40+ networked computers as verified baseline facilities—not evidence of AI compute.
 - Replaced `ClaimTag` text parsing with required typed claim kinds and synchronized the rendered 16-source ledger with `docs/evidence/source-manifest.json`.
+
+### Iteration 7 — independent mobile-gate correction
+
+- The exact corrected candidate passed six independent axes but failed the strict all-axis gate because **Mobile promise scored 7.3**.
+- The critic verified two blocking 390px defects: right-edge hero text clipping under its CDP font metrics and a collision between the Trace explanatory paragraph and the `POWER / DATA` node.
+- Added a sub-420px hero measure: 2.8rem headline, 100% bounded copy width, and a smaller thesis measure. Text-range QA now verifies at least 16px clearance from both viewport edges.
+- Moved and compressed the mobile Trace route into a protected vertical band. The measured paragraph-to-first-node clearance is **34.0px**, guarded by a **28px minimum** assertion.
+- Corrected the final Opportunity node independently so it remains separated from the bottom phase rail.
+- No desktop composition, chapter order, interaction model, or motion semantics changed.
 
 ### Current internal frame assessment
 

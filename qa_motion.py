@@ -38,6 +38,23 @@ async def ordinary_pass(browser, label, viewport):
     overflow=await page.evaluate('document.documentElement.scrollWidth > document.documentElement.clientWidth')
     phase_width=await page.locator('.constellation-phases').evaluate("e=>getComputedStyle(e,'::after').width")
     settled_a,_=await canvas_hash(page); await page.wait_for_timeout(400); settled_b,_=await canvas_hash(page)
+    geometry=await page.evaluate("""() => {
+      const rangeRect=(selector)=>{
+        const el=document.querySelector(selector);if(!el)return null;
+        const range=document.createRange();range.selectNodeContents(el);const r=range.getBoundingClientRect();
+        return {left:r.left,right:r.right,width:r.width};
+      };
+      const canvas=document.querySelector('.constellation canvas');
+      const paragraph=document.querySelector('.constellation-copy>p:last-child');
+      const cr=canvas?.getBoundingClientRect(),pr=paragraph?.getBoundingClientRect();
+      const firstNodeY=Number(canvas?.dataset.mobileFirstNodeY||0);
+      return {
+        viewportWidth:innerWidth,
+        heroHeadline:rangeRect('.hero h1'),
+        heroThesis:rangeRect('.hero-thesis'),
+        traceGapPx:cr&&pr&&firstNodeY ? cr.top+cr.height*firstNodeY-15-pr.bottom : null
+      };
+    }""")
     semantics=await page.evaluate("""() => ({
       cursorCount:document.querySelectorAll('.motion-cursor').length,
       allLabButtonsPressed:[...document.querySelectorAll('.lab-interactive button')].every(b=>b.hasAttribute('aria-pressed')),
@@ -56,6 +73,7 @@ async def ordinary_pass(browser, label, viewport):
       'no_custom_cursor': semantics['cursorCount']==0,
       'lab_pressed_semantics': semantics['allLabButtonsPressed'],
       'trace_commission_verify_copy': all(x in semantics['traceCopy'].upper() for x in ['TRACE','COMMISSION','VERIFY']),
+      'mobile_geometry': geometry if label=='mobile' else None,
       'raf_avg_ms': round(statistics.mean(frames),2),
       'raf_p95_ms': round(sorted(frames)[int(len(frames)*.95)],2),
     }
@@ -99,6 +117,7 @@ async def main():
       'canvas_stops_when_settled':all(results[x]['canvas_settles'] for x in ['desktop','mobile']),
       'oakwood_motion_language':all(results[x]['no_custom_cursor'] and results[x]['trace_commission_verify_copy'] for x in ['desktop','mobile']),
       'lab_selection_semantics':all(results[x]['lab_pressed_semantics'] for x in ['desktop','mobile']),
+      'mobile_signature_clearance':results['mobile']['mobile_geometry']['heroHeadline']['left']>=16 and results['mobile']['mobile_geometry']['heroHeadline']['right']<=results['mobile']['mobile_geometry']['viewportWidth']-16 and results['mobile']['mobile_geometry']['heroThesis']['right']<=results['mobile']['mobile_geometry']['viewportWidth']-16 and results['mobile']['mobile_geometry']['traceGapPx']>=28,
       'reduced_motion_static':results['reduced_motion']['canvas_static'] and results['reduced_motion']['animated']==0,
       'reduced_motion_compact':results['reduced_motion']['height']<=results['reduced_motion']['viewport']*1.05 and results['reduced_motion']['sticky']=='relative' and results['reduced_motion']['cursorCount']==0,
     }

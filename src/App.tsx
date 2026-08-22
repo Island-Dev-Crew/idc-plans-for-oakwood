@@ -250,8 +250,8 @@ function ProofTrace() {
     const labels = ['ROOM 409','POWER / DATA','REUSE','STUDIO','LOCAL','VERIFY','EVIDENCE VAULT','OPPORTUNITY']
     const field = [[.58,.3],[.77,.28],[.63,.53],[.82,.54],[.47,.76],[.63,.78],[.79,.75],[.91,.75]]
     const commissioned = [[.42,.38],[.59,.38],[.76,.38],[.42,.67],[.57,.67],[.7,.67],[.83,.67],[.94,.67]]
-    const mobileField = [[.24,.58],[.5,.56],[.76,.59],[.58,.68],[.38,.74],[.58,.8],[.42,.86],[.62,.92]]
-    const mobileCommissioned = [[.2,.57],[.5,.57],[.8,.57],[.5,.66],[.5,.73],[.5,.79],[.5,.85],[.5,.91]]
+    const mobileField = [[.24,.645],[.5,.625],[.76,.655],[.58,.72],[.38,.78],[.58,.835],[.42,.885],[.62,.91]]
+    const mobileCommissioned = [[.2,.64],[.5,.64],[.8,.64],[.5,.71],[.5,.77],[.5,.825],[.5,.875],[.5,.91]]
     const links = [[0,1],[1,3],[2,3],[3,4],[4,5],[5,6],[6,7]]
     let w=0,h=0,dpr=1,progress=reduce?1:0,target=progress,raf=0
     const lerp=(a:number,b:number,t:number)=>a+(b-a)*t
@@ -297,7 +297,7 @@ function ProofTrace() {
   },[])
   return <section ref={wrapRef} className="constellation trace-system" aria-labelledby="constellation-title">
     <div className="constellation-sticky">
-      <canvas ref={canvasRef} aria-hidden="true"/>
+      <canvas ref={canvasRef} aria-hidden="true" data-mobile-first-node-y="0.625"/>
       <div className="constellation-copy">
         <p className="eyebrow">TRACE → COMMISSION → VERIFY</p>
         <h2 id="constellation-title">Trace the room. Commission the system. <em>Verify the proof.</em></h2>
